@@ -10,15 +10,15 @@ into functional components using embedding models + cosine distance, and (3) run
 ablation experiments measuring per-component impact across models. The paper and all
 repo artifacts are written in English.
 
-Current state (branch `v1`): the corpus (`corpus/`) and the manual analysis
-(`analysis/`) are complete. The decomposition pipeline is being REBUILT as one
-small self-contained command per step under `cmd/`, following the frozen recipe
-in "Decomposition methodology" below. The previous full implementation (pkg/
-packages, Makefile, pipeline.json, fake-embedder smoke gate, unit-tested
-clustering math) is preserved at commit `75d9715` — consult it with
-`git show 75d9715:<path>` when reimplementing a step. No Makefile on this
-branch yet; run steps with `go run ./cmd/<name>`. Requires a local Ollama
-server with the `bge-m3` and `nomic-embed-text` models pulled.
+Current state (branch `v1`): the corpus (`corpus/`), the manual analysis
+(`analysis/`), and the FULL decomposition pipeline (steps 1–8, one
+self-contained command per step under `cmd/`, driven by the Makefile) are
+complete and validated — see "Findings to date" below. The next phase is the
+experiment: scenario suite + ablation runner (roadmap steps 4–5). An earlier
+richer implementation (pkg/ packages, pipeline.json, fake-embedder smoke gate,
+unit-tested clustering math) is preserved at commit `75d9715`
+(`git show 75d9715:<path>`). Requires a local Ollama server with the `bge-m3`
+and `nomic-embed-text` models pulled.
 
 ## Decomposition methodology (reproduction recipe — validated by the 2026-07-22 pilot)
 
@@ -74,11 +74,34 @@ without documenting the change for the paper's methods section.
    Pilot: 12 components; 11 matched the manual codebook
    (`analysis/codebook-draft.md`), 1 new (image-display policies);
    root-cause-fix emerged with the highest stability (0.91, 7 products).
-7. **Experiment stimuli.** Ablation conditions use VERBATIM medoids (or, for
-   components the clustering did not consolidate, verbatim corpus-attested
-   quotes from `analysis/ablation-candidates.md`) — never author paraphrases.
-   Each fragment carries provenance (source, offsets) and token count for the
-   length-matched placebo.
+7. **Experiment stimuli — selection and classification protocol.** Stimuli
+   come from three sources, all verbatim (never author paraphrases), each
+   fragment byte-verified against the corpus and carrying provenance (source,
+   offsets) plus word/char counts for the length-matched placebo:
+   - **Source A (cluster-derived, mechanical):** the component's medoid; the
+     candidate order within a component is fixed by centrality (computed by
+     cmd/taxonomy), never by hand.
+   - **Source B (corpus-attested quotes):** for pre-registered candidates the
+     clustering did not consolidate (failure-escalation, stale-state,
+     ask-economy, ...) — verbatim quotes with line refs from
+     `analysis/ablation-candidates.md`, same byte verification.
+   - **Source C (non-fragment axes):** environment-grounding (harness-
+     generated context block: cwd, git status, layout), the negative-control
+     fragment (conciseness/tone, predicted null), and per-stimulus
+     length-matched placebos.
+   Classification (frozen BEFORE any experiment run; applied uniformly; every
+   decision recorded with the rule that fired):
+   1. *Degeneracy test (mechanical):* exclude if <15 words OR tool-doc
+      markers ("Description:", "Parameters:", type signatures, JSON schema).
+   2. *Coupling test (semi-mechanical, disclosed):* extract tool identifiers
+      (backticked names, Camel/snake case near "tool"/"command") and check
+      against the harness tool list; outside references ⇒ label
+      `tool-coupled` with the identifiers listed. Coupled ≠ excluded: testable
+      only with matching harness tools, or excluded with the reason recorded.
+   3. *Fallback rule (mechanical):* medoid fails 1 or 2 ⇒ the most CENTRAL
+      exemplar passing both; none passes ⇒ component excluded, recorded.
+   The paper reports every component with a stimulus column: medoid /
+   exemplar-fallback / excluded(reason) — exclusions never disappear.
 
 ### Pipeline commands (one self-contained cmd per step; each reads the previous step's output)
 
@@ -103,6 +126,37 @@ a threshold change re-runs only its own suffix of the chain. The Makefile
 encodes this order: `make all` (= `make admit`) runs steps 1–5; `make clean`
 drops the cheap artefacts but keeps the embedding caches; `make clean-all`
 wipes `artefacts/` entirely.
+
+## Findings to date (pilot 2026-07-22, replicated on the rebuilt pipeline 2026-07-23)
+
+1. **The controls exam bounds k from BOTH sides**: coarse cuts fail the
+   negative control, fine cuts tear near-verbatim duplicates apart. Admissible
+   window k ∈ [25, 300]; nomic-embed-text sets both bounds, bge-m3 passes
+   everywhere. Component cut k\*=250 with cross-model ARI 0.70 — reproduced
+   exactly by two independent implementations on slightly different
+   segmentations (robustness-to-implementation evidence for the paper).
+2. **12 data-driven components** at k\*; 11 match the manual pilot codebook,
+   1 is new (image-display-policy). Strongest: root-cause-fix (7 products).
+   Layer shares vary ~4–100% behavioral across products; silhouette
+   monotonically rewards duplicate granularity (why consensus, not
+   silhouette, picks k\*).
+3. **Tool-coupling shrinkage — a finding in itself**: of 12 components, only
+   ~5 have harness-portable stimuli (agent-class: root-cause-fix,
+   environment-self-repair, search-command-protocol, tool-parallelism via
+   exemplar, coding-discipline via exemplar; chat-class: citation-protocol,
+   web-search-fallback). The rest are tool-docs or reference product-specific
+   tools (EnterPlanMode, git_create_pr, str_replace...) — industry prompt
+   components are substantially tool-coupled, only ~40% transfer as plain
+   text.
+4. **Full stimulus roster ≈ 18 conditions**: 5 agent + 2–3 chat cluster
+   fragments (source A) + ~10 attested quotes (source B: failure-escalation,
+   stale-state, action-budget, ask-economy, non-interactive-commands,
+   repo-instruction-files, scope-discipline, persistence,
+   hypothesis-enumeration) + the environment-grounding axis and controls
+   (source C). Known dedup: scope-discipline (B) overlaps the C22 exemplar
+   (A). Known blemish: the C30 medoid carries a trailing source-carrier
+   artifact (`</ENVIRONMENT_SETUP>"""`) — trimming rule must be
+   pre-registered before runs.
 
 ## The corpus and its invariants
 
