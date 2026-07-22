@@ -10,7 +10,7 @@
 
 MODELS ?= bge-m3,nomic-embed-text
 
-.PHONY: all build vet segment embed cluster kbounds admit clean clean-all
+.PHONY: all build vet segment embed cluster kbounds admit taxonomy fragments gentex clean
 
 # step 1: corpus → artefacts/segments.jsonl
 segment:
@@ -36,5 +36,17 @@ kbounds:
 admit:
 	go run ./cmd/admit
 
+# step 6: component taxonomy (steps A–D) → artefacts/taxonomy.json + .md
+taxonomy:
+	go run ./cmd/taxonomy
+
+# step 8: paper tables (pure formatting) → paper/*.gen.tex
+gentex:
+	go run ./cmd/gentex
+
 clean:
 	rm -rf artefacts
+
+# step 7: verbatim ablation stimuli → artefacts/fragments.jsonl
+fragments:
+	go run ./cmd/fragments

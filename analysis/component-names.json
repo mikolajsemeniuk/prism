@@ -1,0 +1,15 @@
+{
+  "_comment": "Step E of the taxonomy methodology (see CLAUDE.md): hand-edited interpretive names/definitions for the mechanical clusters in artefacts/taxonomy.json. Edit freely — this file NEVER feeds back into the pipeline; cmd/gentex merges it into paper/taxonomy.gen.tex at format time only. Keys are cluster ids at the current component cut; re-check them after any re-run that changes k* or the segmentation.",
+  "C31": { "name": "root-cause-fix", "definition": "Diagnose before editing; fix the cause, not the symptom; consult logs and tests first." },
+  "C22": { "name": "vcs-git-safety", "definition": "Git conventions and guardrails: never force push, no git add ., branch/commit discipline." },
+  "C78": { "name": "edit-tool-protocol", "definition": "Exact-string file-edit grammar (str_replace lineage): uniqueness of old_string, whitespace care." },
+  "C10": { "name": "shell-process-mgmt", "definition": "Managing long-running shell processes: instances, identifiers, writing to stdin, backgrounding." },
+  "C136": { "name": "image-display-policy", "definition": "When and how to generate or render images: carousels, product visuals, mandatory image tools." },
+  "C119": { "name": "citation-protocol", "definition": "Citing sources: when a citation is required, id formats, linking claims to sources." },
+  "C58": { "name": "tool-parallelism", "definition": "Batching independent tool calls and running them simultaneously." },
+  "C20": { "name": "search-command-protocol", "definition": "Efficient code search: parallel searches, rg over grep/find, dedicated search tools." },
+  "C70": { "name": "plan-approval-flow", "definition": "Plan mode and user approval: when to enter planning, how plans get accepted." },
+  "C29": { "name": "audience-adaptation", "definition": "Calibrating language to a non-technical user; plain-language and same-language rules." },
+  "C24": { "name": "web-search-fallback", "definition": "Escalating to public web search when internal results are insufficient; trustworthy-source rules." },
+  "C30": { "name": "environment-self-repair", "definition": "Missing tools or packages are installed and worked around rather than halting the task." }
+}

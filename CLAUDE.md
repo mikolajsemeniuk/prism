@@ -67,7 +67,10 @@ without documenting the change for the paper's methods section.
       members) + distinctive terms (tf-idf with clusters as documents).
    D. *Emission*: taxonomy .md/.json — everything above is mechanical.
    E. *Naming/definitions*: a separate interpretive pass that never feeds back
-      into A–D and changes no numbers.
+      into A–D and changes no numbers. Names live in
+      `analysis/component-names.json`, produced under the rules of
+      `analysis/naming-protocol.md` (medoid > exemplars > terms; behavioral
+      function only; no vendor tokens; unnamed when unclear).
    Pilot: 12 components; 11 matched the manual codebook
    (`analysis/codebook-draft.md`), 1 new (image-display policies);
    root-cause-fix emerged with the highest stability (0.91, 7 products).
@@ -91,7 +94,7 @@ describing its exact contract.
 | 4 | `cmd/kbounds` | segments + all clusters-*.json | `artefacts/kbounds.json` (controls exam per k per model → admissible window) |
 | 5 | `cmd/admit` | clusters-*.json + kbounds.json | `artefacts/admit.json` (mean cross-model ARI per k → component cut k\*) |
 | 6 | `cmd/taxonomy` (PENDING review of 1–5) | segments + clusters + embeddings + admit | `artefacts/taxonomy.json` + `.md` (steps A–D) |
-| 7 | `cmd/fragments` (PENDING) | taxonomy + segments | `artefacts/fragments.jsonl` (verbatim ablation stimuli with provenance) |
+| 7 | `cmd/fragments` | taxonomy + segments + corpus (byte verification) | `artefacts/fragments.jsonl` (verbatim ablation stimuli: medoid + exemplars per component, provenance + word/char counts; every fragment re-verified byte-for-byte against the corpus) |
 | 8 | `cmd/gentex` (PENDING) | `artefacts/*.json` | `paper/*.gen.tex` (pure formatting, zero computation) |
 
 Order: 1 → 2(×2 models) → 3(×2) → 4 → 5 → 6 → 7; 8 reads everything. Only

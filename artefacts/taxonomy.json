@@ -1,0 +1,3256 @@
+{
+  "counts": {
+    "component": 12,
+    "micro": 182,
+    "product-specific": 37,
+    "unstable": 19
+  },
+  "entries": [
+    {
+      "id": 21,
+      "category": "unstable",
+      "size": 67,
+      "stability": 0.4626865671641791,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Cline (VS Code coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 34,
+      "category": "unstable",
+      "size": 54,
+      "stability": 0.3333333333333333,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Cline (VS Code coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "unstable",
+      "size": 20,
+      "stability": 0.45,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "Devin (autonomous software engineer)",
+        "Grok (grok.com / x.com)",
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 31,
+      "category": "component",
+      "size": 11,
+      "stability": 0.5454545454545454,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Devin (autonomous software engineer)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent",
+        "Windsurf Cascade (agentic AI coding assistant)",
+        "v0 (AI web-app builder)"
+      ],
+      "terms": [
+        "debugging",
+        "problem",
+        "tests",
+        "statements",
+        "error",
+        "issues",
+        "logs",
+        "data"
+      ],
+      "medoid_id": "windsurf--cascade--wave-11#0013",
+      "medoid_text": "When debugging, only make code changes if you are certain that you can solve the problem. Otherwise, follow debugging best practices: 1. Address the root cause instead of the symptoms. 2. Add descriptive logging statements and error messages to track variable and code state. 3. Add test functions an…",
+      "exemplar_ids": [
+        "windsurf--cascade--wave-11#0013",
+        "cognition--devin--2025-09-08#0089",
+        "replit--replit-agent--2025-04-22#0008"
+      ]
+    },
+    {
+      "id": 17,
+      "category": "unstable",
+      "size": 8,
+      "stability": 0.375,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Cline (VS Code coding agent)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 22,
+      "category": "component",
+      "size": 19,
+      "stability": 0.6842105263157895,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Devin (autonomous software engineer)",
+        "OpenHands (autonomous software agent)"
+      ],
+      "terms": [
+        "git",
+        "branch",
+        "changes",
+        "github",
+        "repo",
+        "unless",
+        "pull",
+        "files"
+      ],
+      "medoid_id": "cognition--devin--2025-09-08#0078",
+      "medoid_text": "When working with git repositories and creating branches: - Never force push, instead ask the user for help if your push fails - Never use `git add .`; instead be careful to only add the files that you actually want to commit. - You should always prefer builtin commands such as git_create_pr, git_pr…",
+      "exemplar_ids": [
+        "cognition--devin--2025-09-08#0078",
+        "openai--codex-cli--base-prompt--2026-07-20#0024",
+        "cognition--devin--2025-09-08#0083"
+      ]
+    },
+    {
+      "id": 46,
+      "category": "unstable",
+      "size": 18,
+      "stability": 0.2777777777777778,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "Devin (autonomous software engineer)",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 50,
+      "category": "unstable",
+      "size": 15,
+      "stability": 0.4,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Cursor IDE (Agent mode)",
+        "Windsurf Cascade (agentic AI coding assistant)",
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 41,
+      "category": "unstable",
+      "size": 14,
+      "stability": 0.35714285714285715,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Cursor IDE (Agent mode)",
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 78,
+      "category": "component",
+      "size": 13,
+      "stability": 0.8461538461538461,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "Grok (grok.com / x.com)",
+        "Replit Agent",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ],
+      "terms": [
+        "sudo",
+        "file",
+        "path",
+        "old_str",
+        "string",
+        "line",
+        "str_replace",
+        "edit"
+      ],
+      "medoid_id": "xai--grok--4.3-beta#0058",
+      "medoid_text": "This tool replaces exact occurrences of old_string with new_string in file_path. By default, it replaces only if there's exactly one occurrence; set replace_all to true to replace all. Files must be read via read_file tool before editing. If you try to edit a file that has not been read then the edi…",
+      "exemplar_ids": [
+        "xai--grok--4.3-beta#0058",
+        "cognition--devin--2025-09-08#0029",
+        "cognition--devin--2025-09-08#0024"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "component",
+      "size": 8,
+      "stability": 0.5,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "Grok (grok.com / x.com)"
+      ],
+      "terms": [
+        "shell",
+        "process",
+        "instance",
+        "command",
+        "identifier",
+        "running",
+        "parameters",
+        "no_shell_cmd_prompt"
+      ],
+      "medoid_id": "cognition--devin--2025-09-08#0017",
+      "medoid_text": "Description: Run command(s) in a bash shell with bracketed paste mode. This command will return the shell output. For commands that take longer than a few seconds, the command will return the most recent shell output but keep the shell process running. Long shell outputs will be truncated and writte…",
+      "exemplar_ids": [
+        "cognition--devin--2025-09-08#0017",
+        "anthropic--claude-code--v2.1.214#0072",
+        "cognition--devin--2025-09-08#0018"
+      ]
+    },
+    {
+      "id": 136,
+      "category": "component",
+      "size": 28,
+      "stability": 0.5357142857142857,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)",
+        "v0 (AI web-app builder)"
+      ],
+      "terms": [
+        "image",
+        "images",
+        "carousel",
+        "product",
+        "products",
+        "render",
+        "visual",
+        "image_gen"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0007",
+      "medoid_text": "CRITICAL FOR IMAGE GENERATION REQUESTS: If the user asks to create, draw, design, render, visualize, or generate an image, use the image_gen tool when appropriate. DO NOT answer with tool arguments, JSON, or parameter objects in user-visible text. Tool arguments belong ONLY inside the image_gen tool…",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0007",
+        "xai--grok--4.3-beta#0071",
+        "xai--grok--4.3-beta#0045"
+      ]
+    },
+    {
+      "id": 119,
+      "category": "component",
+      "size": 15,
+      "stability": 0.8,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "Grok (grok.com / x.com)"
+      ],
+      "terms": [
+        "citations",
+        "sources",
+        "citation_id",
+        "cite",
+        "citation",
+        "source",
+        "web",
+        "search"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0006",
+      "medoid_text": "When providing explanations that rely on specific facts and data, always include citations. Use citations whenever you bring up something that isn't purely reasoning or general background knowledge. Sticking to facts and making assumptions clear is critical for providing trustworthy responses.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0006",
+        "openai--chatgpt--gpt-5.6#0081",
+        "openai--chatgpt--gpt-5.6#0145"
+      ]
+    },
+    {
+      "id": 68,
+      "category": "unstable",
+      "size": 10,
+      "stability": 0.3,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)"
+      ]
+    },
+    {
+      "id": 92,
+      "category": "unstable",
+      "size": 10,
+      "stability": 0.4,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Cursor IDE (Agent mode)",
+        "Windsurf Cascade (agentic AI coding assistant)",
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 58,
+      "category": "component",
+      "size": 9,
+      "stability": 0.5555555555555556,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Cursor IDE (Agent mode)",
+        "Grok (grok.com / x.com)"
+      ],
+      "terms": [
+        "tools",
+        "namespace",
+        "tool",
+        "agent",
+        "parallel",
+        "workflow",
+        "function",
+        "multiple"
+      ],
+      "medoid_id": "anysphere--cursor-ide--agent-2.0#0014",
+      "medoid_text": "// Use this function to run multiple tools simultaneously, but only if they can operate in parallel. Do this even if the prompt suggests using the tools sequentially. type parallel = (_: { // The tools to be executed in parallel. NOTE: only functions tools are permitted tool_uses: { // The name of t…",
+      "exemplar_ids": [
+        "anysphere--cursor-ide--agent-2.0#0014",
+        "xai--grok--4.3-beta#0004",
+        "anthropic--claude-code--v2.1.214#0266"
+      ]
+    },
+    {
+      "id": 20,
+      "category": "component",
+      "size": 8,
+      "stability": 0.625,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "OpenHands (autonomous software agent)"
+      ],
+      "terms": [
+        "commands",
+        "search",
+        "pid",
+        "grep",
+        "shell",
+        "efficient",
+        "multiple",
+        "using"
+      ],
+      "medoid_id": "cognition--devin--2025-09-08#0036",
+      "medoid_text": "When using search commands: - Output multiple search commands at the same time for efficient, parallel search. - Never use grep or find in your shell to search. You must use your builtin search commands since they have many builtin convenience features such as better search filters, smart truncation…",
+      "exemplar_ids": [
+        "cognition--devin--2025-09-08#0036",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0019",
+        "cognition--devin--2025-09-08#0021"
+      ]
+    },
+    {
+      "id": 18,
+      "category": "unstable",
+      "size": 6,
+      "stability": 0.3333333333333333,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 54,
+      "category": "unstable",
+      "size": 5,
+      "stability": 0.2,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 127,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.75,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 70,
+      "category": "component",
+      "size": 14,
+      "stability": 0.6428571428571429,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "v0 (AI web-app builder)"
+      ],
+      "terms": [
+        "plan",
+        "mode",
+        "approval",
+        "askuserquestion",
+        "tool",
+        "enterplanmode",
+        "approach",
+        "user"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0067",
+      "medoid_text": "Plan mode note: To switch into plan mode, use EnterPlanMode (not this tool). Once in plan mode, use this tool to clarify requirements or choose between approaches BEFORE finalizing your plan. Do NOT use this tool to ask \"Is my plan ready?\", \"Should I proceed?\", or otherwise reference \"the plan\" in q…",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0067",
+        "anthropic--claude-code--v2.1.214#0132",
+        "anthropic--claude-code--v2.1.214#0146"
+      ]
+    },
+    {
+      "id": 29,
+      "category": "component",
+      "size": 7,
+      "stability": 0.5714285714285714,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent"
+      ],
+      "terms": [
+        "replit",
+        "feedback",
+        "user",
+        "services",
+        "external",
+        "behalf",
+        "questions",
+        "interacting"
+      ],
+      "medoid_id": "replit--replit-agent--2025-04-22#0011",
+      "medoid_text": "Always speak in simple, everyday language. User is non-technical and cannot understand code details. Always respond in the same language as the user's message (Chinese, Japanese, etc.) You have access to workflow state, console logs and screenshots, and you can get them by continue working, don't as…",
+      "exemplar_ids": [
+        "replit--replit-agent--2025-04-22#0011",
+        "replit--replit-agent--2025-04-22#0006",
+        "replit--replit-agent--2025-04-22#0009"
+      ]
+    },
+    {
+      "id": 24,
+      "category": "component",
+      "size": 6,
+      "stability": 0.8333333333333334,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Devin (autonomous software engineer)",
+        "OpenHands (autonomous software agent)"
+      ],
+      "terms": [
+        "web",
+        "sources",
+        "links",
+        "public",
+        "pages",
+        "connected",
+        "search",
+        "results"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0428",
+      "medoid_text": "- If internal search results are insufficient or lack trustworthy references, use `web` to find and incorporate relevant public web information. - Consider the connectors and sources available via `api_tool` as well, when available and appropriate.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0428",
+        "openai--chatgpt--gpt-5.6#0417",
+        "openai--chatgpt--gpt-5.6#0088"
+      ]
+    },
+    {
+      "id": 26,
+      "category": "unstable",
+      "size": 5,
+      "stability": 0.2,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 30,
+      "category": "component",
+      "size": 5,
+      "stability": 0.6,
+      "products": [
+        "Devin (autonomous software engineer)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent"
+      ],
+      "terms": [
+        "install",
+        "dependencies",
+        "environment",
+        "package",
+        "packages",
+        "missing",
+        "installed",
+        "pip"
+      ],
+      "medoid_id": "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0058",
+      "medoid_text": "* When user asks you to run an application, don't stop if the application is not installed. Instead, please install the application and run the command again. * If you encounter missing dependencies: 1. First, look around in the repository for existing dependency files (requirements.txt, pyproject.t…",
+      "exemplar_ids": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0058",
+        "replit--replit-agent--2025-04-22#0010",
+        "cognition--devin--2025-09-08#0088"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.25,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Codex CLI (base agent system prompt)"
+      ]
+    },
+    {
+      "id": 25,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "Devin (autonomous software engineer)",
+        "OpenHands (autonomous software agent)",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 83,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.25,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Cline (VS Code coding agent)",
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 84,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 94,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)"
+      ]
+    },
+    {
+      "id": 218,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.75,
+      "products": [
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 52,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 97,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.3333333333333333,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 36,
+      "category": "product-specific",
+      "size": 147,
+      "stability": 0.9795918367346939,
+      "products": [
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "claude",
+        "person",
+        "avoids",
+        "anthropic",
+        "even",
+        "content",
+        "minor",
+        "about"
+      ],
+      "medoid_id": "anthropic--claude-ai--fable-5--2026-06-09#0030",
+      "medoid_text": "Claude avoids making claims about any individual's mental state, conditions, or motivation, including the user's. As a language model in a chat interface, Claude's understanding of a situation is dependent on the user's input, which Claude is not able to verify. Claude practices good epistemology an…",
+      "exemplar_ids": [
+        "anthropic--claude-ai--fable-5--2026-06-09#0030",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0036",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0048"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "product-specific",
+      "size": 11,
+      "stability": 0.8181818181818182,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "Devin (autonomous software engineer)"
+      ],
+      "terms": [
+        "block_on_user_response",
+        "message_user",
+        "done",
+        "prop",
+        "block",
+        "user",
+        "wait",
+        "none"
+      ],
+      "medoid_id": "cognition--devin--2025-09-08#0002",
+      "medoid_text": "- When encountering environment issues - To share deliverables / download links with the user (via attachments) - When critical information cannot be accessed through available resources - When requesting permissions or keys from the user - Use the same language as the user - You must use the block_…",
+      "exemplar_ids": [
+        "cognition--devin--2025-09-08#0002",
+        "cognition--devin--2025-09-08#0063",
+        "cognition--devin--2025-09-08#0077"
+      ]
+    },
+    {
+      "id": 37,
+      "category": "product-specific",
+      "size": 10,
+      "stability": 1,
+      "products": [
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "claude",
+        "opus",
+        "model",
+        "fable",
+        "mythos",
+        "most",
+        "models",
+        "advanced"
+      ],
+      "medoid_id": "anthropic--claude-ai--fable-5--2026-06-09#0004",
+      "medoid_text": "Claude is accessible via an API and Claude Platform. The most recent models are Claude Fable 5, Claude Opus 4.8, Claude Sonnet 4.6, and Claude Haiku 4.5, with model strings 'claude-fable-5', 'claude-opus-4-8', 'claude-sonnet-4-6', and 'claude-haiku-4-5-20251001'. The person is able to switch models …",
+      "exemplar_ids": [
+        "anthropic--claude-ai--fable-5--2026-06-09#0004",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0003",
+        "anthropic--claude-ai--opus-4-7--2026-04-16#0003"
+      ]
+    },
+    {
+      "id": 105,
+      "category": "product-specific",
+      "size": 10,
+      "stability": 0.6,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "time_frame_filter",
+        "recent",
+        "apply",
+        "intent",
+        "timeframe",
+        "file_library",
+        "freshness",
+        "queries"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0450",
+      "medoid_text": "When a user explicitly seeks documents within a specific time frame (strong navigation intent), you can apply a time_frame_filter with your queries to narrow the search to that period. The time_frame_filter accepts a dictionary with the keys start_date and end_date.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0450",
+        "openai--chatgpt--gpt-5.6#0163",
+        "openai--chatgpt--gpt-5.6#0455"
+      ]
+    },
+    {
+      "id": 71,
+      "category": "product-specific",
+      "size": 7,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "automation",
+        "recurring",
+        "monitoring",
+        "schedule",
+        "future",
+        "involving",
+        "scheduled",
+        "suggesting"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0136",
+      "medoid_text": "Create a new automation. Use when the user wants to schedule a prompt for the future or on a recurring schedule.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0136",
+        "openai--chatgpt--gpt-5.6#0101",
+        "openai--chatgpt--gpt-5.6#0125"
+      ]
+    },
+    {
+      "id": 102,
+      "category": "product-specific",
+      "size": 7,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)"
+      ],
+      "terms": [
+        "mcp",
+        "server",
+        "servers",
+        "tools",
+        "wait",
+        "required",
+        "ready",
+        "mcp_tool_call"
+      ],
+      "medoid_id": "cognition--devin--2025-09-08#0072",
+      "medoid_text": "Description: Lists all tools and resources available on the specified MCP server. Parameters: - server (required): name of the MCP server to list tools for",
+      "exemplar_ids": [
+        "cognition--devin--2025-09-08#0072",
+        "cognition--devin--2025-09-08#0071",
+        "cognition--devin--2025-09-08#0073"
+      ]
+    },
+    {
+      "id": 155,
+      "category": "product-specific",
+      "size": 7,
+      "stability": 0.5714285714285714,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Grok (grok.com / x.com)"
+      ],
+      "terms": [
+        "rich",
+        "widgets",
+        "widget",
+        "elements",
+        "response",
+        "element",
+        "genui",
+        "information"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0053",
+      "medoid_text": "Treat all widgets of any type as purely supplemental visualizations—the textual response must stand on its own and answer the user's query fully. The information returned by `genui.run` may not be fully included in a widget, so ensure the response covers all relevant details. Do not rely on a widg…",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0053",
+        "openai--chatgpt--gpt-5.6#0052",
+        "openai--chatgpt--gpt-5.6#0060"
+      ]
+    },
+    {
+      "id": 173,
+      "category": "product-specific",
+      "size": 7,
+      "stability": 0.8571428571428571,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Grok (grok.com / x.com)"
+      ],
+      "terms": [
+        "number",
+        "max",
+        "return",
+        "default",
+        "posts"
+      ],
+      "medoid_id": "xai--grok--4.3-beta#0015",
+      "medoid_text": "The number of posts to return. Default to 3, max is 10.",
+      "exemplar_ids": [
+        "xai--grok--4.3-beta#0015",
+        "xai--grok--4.3-beta#0020",
+        "xai--grok--4.3-beta#0010"
+      ]
+    },
+    {
+      "id": 99,
+      "category": "product-specific",
+      "size": 6,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "task",
+        "list",
+        "tool",
+        "python",
+        "code",
+        "user"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0236",
+      "medoid_text": "Use this tool to update a task in the task list.",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0236",
+        "openai--chatgpt--gpt-5.6#0304",
+        "anthropic--claude-code--v2.1.214#0226"
+      ]
+    },
+    {
+      "id": 109,
+      "category": "product-specific",
+      "size": 6,
+      "stability": 0.5,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Grok (grok.com / x.com)"
+      ],
+      "terms": [
+        "file",
+        "disk",
+        "filesystem",
+        "saved",
+        "image",
+        "imagine_images",
+        "imagine",
+        "powered"
+      ],
+      "medoid_id": "xai--grok--4.3-beta#0064",
+      "medoid_text": "Write a file to the local filesystem. Overwrites the existing file if there is one. If a file exists at the file_path then you must first use the read_file tool before using the write_file tool.",
+      "exemplar_ids": [
+        "xai--grok--4.3-beta#0064",
+        "xai--grok--4.3-beta#0049",
+        "xai--grok--4.3-beta#0044"
+      ]
+    },
+    {
+      "id": 48,
+      "category": "product-specific",
+      "size": 5,
+      "stability": 0.8,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)"
+      ],
+      "terms": [
+        "skills",
+        "skill",
+        "secrets",
+        "listing",
+        "listed",
+        "unscoped",
+        "command",
+        "plugin"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0208",
+      "medoid_text": "A skill is a packaged set of instructions the user or project has set up for a particular kind of task (deploy steps, a review checklist, a repo-specific workflow). Available skills appear in a system-reminder listing with one-line descriptions. When the task at hand is one a listed skill covers, ca…",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0208",
+        "anthropic--claude-code--v2.1.214#0210",
+        "anthropic--claude-code--v2.1.214#0209"
+      ]
+    },
+    {
+      "id": 96,
+      "category": "unstable",
+      "size": 5,
+      "stability": 0.4,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 110,
+      "category": "product-specific",
+      "size": 5,
+      "stability": 0.8,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Cursor IDE (Agent mode)"
+      ],
+      "terms": [
+        "reasoning",
+        "example",
+        "semantic",
+        "query",
+        "authservice",
+        "codebase_search",
+        "chunks",
+        "chunk"
+      ],
+      "medoid_id": "anysphere--cursor-ide--agent-2.0#0023",
+      "medoid_text": "Semantic search is your MAIN exploration tool. - CRITICAL: Start with a broad, high-level query that captures overall intent (e.g. \"authentication flow\" or \"error-handling policy\"), not low-level terms. - Break multi-part questions into focused sub-queries (e.g. \"How does authentication work?\" or \"W…",
+      "exemplar_ids": [
+        "anysphere--cursor-ide--agent-2.0#0023",
+        "openai--chatgpt--gpt-5.6#0159",
+        "openai--chatgpt--gpt-5.6#0158"
+      ]
+    },
+    {
+      "id": 15,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.75,
+      "products": [
+        "OpenHands (autonomous software agent)",
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 98,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.25,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 120,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 122,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Cline (VS Code coding agent)"
+      ]
+    },
+    {
+      "id": 125,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.75,
+      "products": [
+        "Devin (autonomous software engineer)",
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 144,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 185,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.75,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 194,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 0,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 19,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Codex CLI (base agent system prompt)",
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 42,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "Claude (claude.ai)",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 57,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 67,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 85,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 93,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 117,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Cursor IDE (Agent mode)",
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 121,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "Cline (VS Code coding agent)",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 135,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 137,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 163,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 33,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Devin (autonomous software engineer)",
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 56,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 59,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 66,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 103,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Claude Code (CLI coding agent)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 104,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 111,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Cursor IDE (Agent mode)",
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 123,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Devin (autonomous software engineer)",
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 128,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Devin (autonomous software engineer)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 130,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Devin (autonomous software engineer)"
+      ]
+    },
+    {
+      "id": 131,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Devin (autonomous software engineer)"
+      ]
+    },
+    {
+      "id": 133,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Google Gemini (web app, gemini.google.com)",
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 138,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Google Gemini (web app, gemini.google.com)",
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 211,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 169,
+      "category": "product-specific",
+      "size": 29,
+      "stability": 0.896551724137931,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "msearch",
+        "uploaded",
+        "source_filter",
+        "file_library",
+        "mclick",
+        "file_search",
+        "sources",
+        "file"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0144",
+      "medoid_text": "* Use `msearch` with `source_filter: [\"files_uploaded_in_conversation\"]` for files uploaded directly in the current conversation. * Use `msearch` with `source_filter: [\"file_library\"]` only when `file_library` is listed as an available source. * Include both file sources in `source_filter` only when…",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0144",
+        "openai--chatgpt--gpt-5.6#0155",
+        "openai--chatgpt--gpt-5.6#0427"
+      ]
+    },
+    {
+      "id": 182,
+      "category": "product-specific",
+      "size": 19,
+      "stability": 0.7368421052631579,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "gmail",
+        "messages",
+        "hydrated",
+        "draft",
+        "label",
+        "message",
+        "existing",
+        "thread"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0227",
+      "medoid_text": "Updates an existing Gmail draft in place.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0227",
+        "openai--chatgpt--gpt-5.6#0235",
+        "openai--chatgpt--gpt-5.6#0232"
+      ]
+    },
+    {
+      "id": 14,
+      "category": "product-specific",
+      "size": 17,
+      "stability": 0.9411764705882353,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ],
+      "terms": [
+        "_statictextsection",
+        "class",
+        "body",
+        "name",
+        "policy",
+        "block"
+      ],
+      "medoid_id": "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0014",
+      "medoid_text": "class RoleSection(_StaticTextSection): name = \"role\" body = \"\"\"\\",
+      "exemplar_ids": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0014",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0021",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0029"
+      ]
+    },
+    {
+      "id": 86,
+      "category": "product-specific",
+      "size": 14,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "worktree",
+        "session",
+        "enterworktree",
+        "worktrees",
+        "git",
+        "repository",
+        "directory",
+        "remove"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0134",
+      "medoid_text": "Use this tool ONLY when explicitly instructed to work in a worktree — either by the user directly, or by project instructions (CLAUDE.md / memory). This tool creates an isolated git worktree and switches the current session into it.",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0134",
+        "anthropic--claude-code--v2.1.214#0139",
+        "anthropic--claude-code--v2.1.214#0137"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "product-specific",
+      "size": 12,
+      "stability": 0.75,
+      "products": [
+        "Aider (terminal pair-programming agent)"
+      ],
+      "terms": [
+        "hello",
+        "fence",
+        "flask",
+        "factorial",
+        "import",
+        "replace",
+        "mathweb",
+        "math"
+      ],
+      "medoid_id": "aider-ai--aider--editblock-prompts--2026-07-20#0014",
+      "medoid_text": "return str(math.factorial(n)) \u003e\u003e\u003e\u003e\u003e\u003e\u003e REPLACE {fence[1]} \"\"\", ), dict( role=\"user\", content=\"Refactor hello() into its own file.\", ), dict( role=\"assistant\", content=\"\"\"To make this change we need to modify `main.py` and make a new file `hello.py`:",
+      "exemplar_ids": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0014",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0013",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0009"
+      ]
+    },
+    {
+      "id": 16,
+      "category": "product-specific",
+      "size": 11,
+      "stability": 1,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ],
+      "terms": [
+        "ctx",
+        "self",
+        "promptcontext",
+        "def",
+        "bool",
+        "none",
+        "template_kwargs",
+        "return"
+      ],
+      "medoid_id": "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0042",
+      "medoid_text": "def render(self, ctx: PromptContext) -\u003e str | None: content = ctx.template_kwargs.get(\"security_policy_content\") # `is not None`: an explicitly empty custom policy must not fall back to body. if content is not None: return _refine(f\"\u003cSECURITY\u003e\\n\\n{content}\\n\\n\u003c/SECURITY\u003e\", ctx.platform) return self.…",
+      "exemplar_ids": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0042",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0013",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0054"
+      ]
+    },
+    {
+      "id": 74,
+      "category": "product-specific",
+      "size": 11,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "monitor",
+        "ends",
+        "log",
+        "notification",
+        "tail",
+        "filter",
+        "exit",
+        "stdout"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0173",
+      "medoid_text": "The script runs in the same shell environment as Bash. Exit ends the watch (exit code is reported). Timeout → killed. Set `persistent: true` for session-length watches (PR monitoring, log tails) — the monitor runs until you call TaskStop or the session ends. Use TaskStop to cancel early. **ws so…",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0173",
+        "anthropic--claude-code--v2.1.214#0158",
+        "anthropic--claude-code--v2.1.214#0157"
+      ]
+    },
+    {
+      "id": 124,
+      "category": "product-specific",
+      "size": 11,
+      "stability": 1,
+      "products": [
+        "Devin (autonomous software engineer)"
+      ],
+      "terms": [
+        "devinid",
+        "browser",
+        "tab",
+        "tab_idx",
+        "coordinates",
+        "interact",
+        "page",
+        "element"
+      ],
+      "medoid_id": "cognition--devin--2025-09-08#0043",
+      "medoid_text": "Description: Click on the specified element. Use this to interact with clickable UI elements. Parameters: - devinid: you can specify the element to click on using its `devinid` but not all elements have one - coordinates: Alternatively specify the click location using x,y coordinates. Only use this …",
+      "exemplar_ids": [
+        "cognition--devin--2025-09-08#0043",
+        "cognition--devin--2025-09-08#0046",
+        "cognition--devin--2025-09-08#0051"
+      ]
+    },
+    {
+      "id": 146,
+      "category": "product-specific",
+      "size": 11,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "ads",
+        "succinctly",
+        "labeled",
+        "shown",
+        "see",
+        "chatgpt",
+        "advertisers",
+        "sponsored"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0014",
+      "medoid_text": "If the user asks why they're seeing an ad or why they are seeing an ad about a specific product or brand, state succinctly that 'I can't view the app UI. If you see a separately labeled sponsored item, that is an ad shown by the platform and is separate from my message. I don't control or insert tho…",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0014",
+        "openai--chatgpt--gpt-5.6#0009",
+        "openai--chatgpt--gpt-5.6#0010"
+      ]
+    },
+    {
+      "id": 176,
+      "category": "unstable",
+      "size": 10,
+      "stability": 0.4,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 244,
+      "category": "unstable",
+      "size": 10,
+      "stability": 0.3,
+      "products": [
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 63,
+      "category": "product-specific",
+      "size": 9,
+      "stability": 0.7777777777777778,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "artifact",
+        "url",
+        "shared",
+        "artifacts",
+        "redeploys",
+        "file",
+        "favicon",
+        "html"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0053",
+      "medoid_text": "**To update an artifact from an earlier conversation** — whenever the user wants an existing artifact updated or its link kept, not only when they paste a URL: pass the artifact's URL as `url` (find it with `action: \"list\"` if you don't have it). Without `url`, a conversation that didn't publish t…",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0053",
+        "anthropic--claude-code--v2.1.214#0052",
+        "anthropic--claude-code--v2.1.214#0055"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "product-specific",
+      "size": 8,
+      "stability": 0.75,
+      "products": [
+        "Aider (terminal pair-programming agent)"
+      ],
+      "terms": [
+        "replace",
+        "search",
+        "blocks",
+        "lines",
+        "block",
+        "fence",
+        "code",
+        "file"
+      ],
+      "medoid_id": "aider-ai--aider--editblock-prompts--2026-07-20#0024",
+      "medoid_text": "Keep *SEARCH/REPLACE* blocks concise. Break large *SEARCH/REPLACE* blocks into a series of smaller blocks that each change a small portion of the file. Include just the changing lines, and a few surrounding lines if needed for uniqueness. Do not include long runs of unchanging lines in *SEARCH/REPLA…",
+      "exemplar_ids": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0024",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0023",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0028"
+      ]
+    },
+    {
+      "id": 107,
+      "category": "product-specific",
+      "size": 8,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "const",
+        "map",
+        "filter",
+        "parallel",
+        "barrier",
+        "await",
+        "pipeline",
+        "seen"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0284",
+      "medoid_text": "When a barrier IS correct — dedup across all findings before expensive verification: ```js const all = await parallel(DIMENSIONS.map(d =\u003e () =\u003e agent(d.prompt, {schema: FINDINGS_SCHEMA}))) const deduped = dedupeByFileAndLine(all.filter(Boolean).flatMap(r =\u003e r.findings)) // \u003c-- genuinely needs ALL …",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0284",
+        "anthropic--claude-code--v2.1.214#0281",
+        "anthropic--claude-code--v2.1.214#0280"
+      ]
+    },
+    {
+      "id": 203,
+      "category": "product-specific",
+      "size": 8,
+      "stability": 0.875,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "setting",
+        "changing",
+        "get_user_settings",
+        "settings",
+        "change",
+        "allowed",
+        "options",
+        "values"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0391",
+      "medoid_text": "* Asking for clarification about which supported setting value they want. * Changing a setting with `set_setting`.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0391",
+        "openai--chatgpt--gpt-5.6#0389",
+        "openai--chatgpt--gpt-5.6#0390"
+      ]
+    },
+    {
+      "id": 60,
+      "category": "unstable",
+      "size": 7,
+      "stability": 0.2857142857142857,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 62,
+      "category": "unstable",
+      "size": 7,
+      "stability": 0.42857142857142855,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 75,
+      "category": "product-specific",
+      "size": 7,
+      "stability": 0.5714285714285714,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "fire",
+        "loop",
+        "1200s",
+        "wakeups",
+        "delay",
+        "work",
+        "recurring",
+        "schedule"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0196",
+      "medoid_text": "Do NOT schedule a short-interval wakeup to poll for background work you started — when harness-tracked work finishes, you are re-invoked automatically, so polling is wasted. Instead schedule a long fallback (1200s+) so the loop survives if the work hangs or never notifies. The exception is externa…",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0196",
+        "anthropic--claude-code--v2.1.214#0085",
+        "anthropic--claude-code--v2.1.214#0200"
+      ]
+    },
+    {
+      "id": 79,
+      "category": "product-specific",
+      "size": 7,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "assistant",
+        "warning",
+        "conversation",
+        "endconversation",
+        "harm",
+        "imminent",
+        "behavior",
+        "ending"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0108",
+      "medoid_text": "- The assistant ONLY considers ending a conversation if many efforts at constructive redirection have been attempted and failed and an explicit warning has been given to the user in a previous message. The tool is only used as a last resort. - Before considering ending a conversation, the assistant …",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0108",
+        "anthropic--claude-code--v2.1.214#0109",
+        "anthropic--claude-code--v2.1.214#0107"
+      ]
+    },
+    {
+      "id": 165,
+      "category": "product-specific",
+      "size": 7,
+      "stability": 0.8571428571428571,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "resources",
+        "tool",
+        "schemas",
+        "api_tool",
+        "descriptions",
+        "function",
+        "tools",
+        "instructions"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0351",
+      "medoid_text": "For tools that are in scope, their full descriptions and function schemas can be retrieved using `list_resources`.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0351",
+        "openai--chatgpt--gpt-5.6#0369",
+        "openai--chatgpt--gpt-5.6#0350"
+      ]
+    },
+    {
+      "id": 248,
+      "category": "product-specific",
+      "size": 7,
+      "stability": 0.5714285714285714,
+      "products": [
+        "Grok (grok.com / x.com)"
+      ],
+      "terms": [
+        "posts",
+        "search",
+        "fetch",
+        "semantic",
+        "query",
+        "post",
+        "relevant",
+        "context"
+      ],
+      "medoid_id": "xai--grok--4.3-beta#0018",
+      "medoid_text": "Fetch X posts that are relevant to a semantic search query.",
+      "exemplar_ids": [
+        "xai--grok--4.3-beta#0018",
+        "xai--grok--4.3-beta#0019",
+        "xai--grok--4.3-beta#0034"
+      ]
+    },
+    {
+      "id": 156,
+      "category": "product-specific",
+      "size": 6,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "sports",
+        "widget",
+        "weather",
+        "forecast",
+        "standings",
+        "schedule",
+        "stock",
+        "seeing"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0091",
+      "medoid_text": "- Only relevant to \"turn\\d+sports\\d+\" reference IDs from sports returned from \"fn\": \"schedule\" calls. By writing 【schedule|turnXsportsY】 you will display a sports schedule or live sports scores, depending on the arguments. - You must use a sports schedule widget if the user would benefit from se…",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0091",
+        "openai--chatgpt--gpt-5.6#0093",
+        "openai--chatgpt--gpt-5.6#0092"
+      ]
+    },
+    {
+      "id": 160,
+      "category": "unstable",
+      "size": 6,
+      "stability": 0.16666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 210,
+      "category": "product-specific",
+      "size": 6,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "connector",
+        "discovered",
+        "action",
+        "url",
+        "mounted",
+        "reuse",
+        "file",
+        "earlier"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0365",
+      "medoid_text": "When an earlier connector result provides a concrete identifier such as `document_id` or `content_location`, reuse it rather than resupplying the URL.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0365",
+        "openai--chatgpt--gpt-5.6#0361",
+        "openai--chatgpt--gpt-5.6#0360"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "product-specific",
+      "size": 5,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)"
+      ],
+      "terms": [
+        "chat",
+        "added",
+        "files",
+        "asking",
+        "decide",
+        "propose",
+        "create",
+        "edits"
+      ],
+      "medoid_id": "aider-ai--aider--editblock-prompts--2026-07-20#0004",
+      "medoid_text": "But if you need to propose edits to existing files not already added to the chat, you *MUST* tell the user their full path names and ask them to *add the files to the chat*. End your reply and wait for their approval. You can keep asking if you then decide you need to edit more files.",
+      "exemplar_ids": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0004",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0003",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0030"
+      ]
+    },
+    {
+      "id": 72,
+      "category": "product-specific",
+      "size": 5,
+      "stability": 0.8,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "minute",
+        "9am",
+        "hour",
+        "every",
+        "hourly",
+        "remind",
+        "cron",
+        "day-of-month"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0081",
+      "medoid_text": "Every user who asks for \"9am\" gets `0 9`, and every user who asks for \"hourly\" gets `0 *` — which means requests from across the planet land on the API at the same instant. When the user's request is approximate, pick a minute that is NOT 0 or 30: \"every morning around 9\" → \"57 8 * * *\" or \"3 9 …",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0081",
+        "anthropic--claude-code--v2.1.214#0080",
+        "anthropic--claude-code--v2.1.214#0082"
+      ]
+    },
+    {
+      "id": 81,
+      "category": "product-specific",
+      "size": 5,
+      "stability": 0.8,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ],
+      "terms": [
+        "example",
+        "refactor",
+        "approaches",
+        "multiple",
+        "api",
+        "possible",
+        "changes",
+        "update"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0119",
+      "medoid_text": "5. **Multi-File Changes**: The task will likely touch more than 2-3 files - Example: \"Refactor the authentication system\" - Example: \"Add a new API endpoint with tests\"",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0119",
+        "anthropic--claude-code--v2.1.214#0128",
+        "anthropic--claude-code--v2.1.214#0116"
+      ]
+    },
+    {
+      "id": 139,
+      "category": "product-specific",
+      "size": 5,
+      "stability": 0.6,
+      "products": [
+        "Google Gemini (web app, gemini.google.com)"
+      ],
+      "terms": [
+        "req",
+        "props",
+        "format",
+        "caption",
+        "alt",
+        "title",
+        "child",
+        "src"
+      ],
+      "medoid_id": "google--gemini--3.5-flash#0026",
+      "medoid_text": "Procedural requests where order is critical. Child `\u003cStep\u003e` props: `title` [REQ], `subtitle` [OPT]. Format:",
+      "exemplar_ids": [
+        "google--gemini--3.5-flash#0026",
+        "google--gemini--3.5-flash#0030",
+        "google--gemini--3.5-flash#0028"
+      ]
+    },
+    {
+      "id": 148,
+      "category": "product-specific",
+      "size": 5,
+      "stability": 0.8,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "variant",
+        "writing",
+        "assignment",
+        "captions",
+        "posts",
+        "social",
+        "complete",
+        "text"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0027",
+      "medoid_text": "Always use a writing block when the assistant provides the complete output for: - Rewriting, rephrasing, proofreading, correcting, polishing, making professional, making friendly, shortening, expanding, or improving a message, email, caption, paragraph, notice, bio, description, assignment answer, r…",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0027",
+        "openai--chatgpt--gpt-5.6#0026",
+        "openai--chatgpt--gpt-5.6#0028"
+      ]
+    },
+    {
+      "id": 150,
+      "category": "product-specific",
+      "size": 5,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ],
+      "terms": [
+        "pdf",
+        "screenshots",
+        "screenshot",
+        "web",
+        "very",
+        "whenever",
+        "tools",
+        "tool"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0098",
+      "medoid_text": "Use screenshots whenever visual PDF content such as charts, diagrams, tables, or figures must be inspected.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0098",
+        "openai--chatgpt--gpt-5.6#0414",
+        "openai--chatgpt--gpt-5.6#0036"
+      ]
+    },
+    {
+      "id": 166,
+      "category": "unstable",
+      "size": 5,
+      "stability": 0.4,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 77,
+      "category": "micro",
+      "size": 4,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 114,
+      "category": "micro",
+      "size": 4,
+      "stability": 1,
+      "products": [
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 116,
+      "category": "micro",
+      "size": 4,
+      "stability": 1,
+      "products": [
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 145,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.75,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 147,
+      "category": "micro",
+      "size": 4,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 178,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.75,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 180,
+      "category": "micro",
+      "size": 4,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 196,
+      "category": "micro",
+      "size": 4,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 23,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 38,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Claude (claude.ai)"
+      ]
+    },
+    {
+      "id": 39,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Claude (claude.ai)"
+      ]
+    },
+    {
+      "id": 49,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 51,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 69,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 76,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 87,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 112,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 151,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 153,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 158,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 167,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 168,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 175,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.3333333333333333,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 177,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 179,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 181,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 191,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.3333333333333333,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 192,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.3333333333333333,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 195,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 197,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 208,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.3333333333333333,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 209,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 222,
+      "category": "micro",
+      "size": 3,
+      "stability": 0.6666666666666666,
+      "products": [
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 233,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 245,
+      "category": "micro",
+      "size": 3,
+      "stability": 1,
+      "products": [
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 13,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 28,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 32,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 35,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 45,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 55,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 61,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 64,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 80,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 82,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 89,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 90,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 100,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 101,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 108,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 113,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 115,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 143,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 152,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 157,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 161,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 162,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 171,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 184,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 188,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 199,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 200,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 205,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 206,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 207,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 213,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 214,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 215,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 217,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 219,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Codex CLI (base agent system prompt)"
+      ]
+    },
+    {
+      "id": 226,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 227,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 229,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 230,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 232,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 234,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 235,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 239,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 240,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 241,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 242,
+      "category": "micro",
+      "size": 2,
+      "stability": 1,
+      "products": [
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 243,
+      "category": "micro",
+      "size": 2,
+      "stability": 0.5,
+      "products": [
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 1,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)"
+      ]
+    },
+    {
+      "id": 27,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "OpenHands (autonomous software agent)"
+      ]
+    },
+    {
+      "id": 40,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude (claude.ai)"
+      ]
+    },
+    {
+      "id": 43,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude (claude.ai)"
+      ]
+    },
+    {
+      "id": 44,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude (claude.ai)"
+      ]
+    },
+    {
+      "id": 47,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 53,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 65,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 73,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 88,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 91,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 95,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 106,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Claude Code (CLI coding agent)"
+      ]
+    },
+    {
+      "id": 118,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Cursor IDE (Agent mode)"
+      ]
+    },
+    {
+      "id": 126,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Devin (autonomous software engineer)"
+      ]
+    },
+    {
+      "id": 129,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Devin (autonomous software engineer)"
+      ]
+    },
+    {
+      "id": 132,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 134,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 140,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 141,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 142,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Google Gemini (web app, gemini.google.com)"
+      ]
+    },
+    {
+      "id": 149,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 154,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 159,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 164,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 170,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 172,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 174,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 183,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 186,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 187,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 189,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 190,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 193,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 198,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 201,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 202,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 204,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 212,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 216,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)"
+      ]
+    },
+    {
+      "id": 220,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 221,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 223,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 224,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Replit Agent"
+      ]
+    },
+    {
+      "id": 225,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 228,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 231,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 236,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 237,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "v0 (AI web-app builder)"
+      ]
+    },
+    {
+      "id": 238,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ]
+    },
+    {
+      "id": 246,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 247,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Grok (grok.com / x.com)"
+      ]
+    },
+    {
+      "id": 249,
+      "category": "micro",
+      "size": 1,
+      "stability": 1,
+      "products": [
+        "Grok (grok.com / x.com)"
+      ]
+    }
+  ],
+  "k_star": 250,
+  "model": "bge-m3",
+  "params": {
+    "exemplars": 3,
+    "min_products": 3,
+    "min_size": 5,
+    "stability_min": 0.5,
+    "top_terms": 8
+  }
+}

@@ -1,0 +1,28 @@
+% GENERATED FILE — do not edit by hand (CLAUDE.md rule: *.gen.tex are never hand-edited).
+% generator: cmd/gentex
+% input artefacts/taxonomy.json sha256: 37bca4db334376c434021eab6916f10fa958f344f3aa55d50e6adf65090e6313
+% input analysis/component-names.json sha256: 1fafb43e064f9c2ab902760a1d3fd7fed67552385428ec71656d82ed33c943d8
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{llrrrl}
+\toprule
+Name & Cluster & Size & Products & Stability & Distinctive terms \\
+\midrule
+root-cause-fix & C31 & 11 & 7 & 0.55 & debugging, problem, tests, statements \\
+vcs-git-safety & C22 & 19 & 5 & 0.68 & git, branch, changes, github \\
+edit-tool-protocol & C78 & 13 & 5 & 0.85 & sudo, file, path, old\_str \\
+shell-process-mgmt & C10 & 8 & 5 & 0.50 & shell, process, instance, command \\
+image-display-policy & C136 & 28 & 4 & 0.54 & image, images, carousel, product \\
+citation-protocol & C119 & 15 & 4 & 0.80 & citations, sources, citation\_id, cite \\
+tool-parallelism & C58 & 9 & 4 & 0.56 & tools, namespace, tool, agent \\
+search-command-protocol & C20 & 8 & 4 & 0.62 & commands, search, pid, grep \\
+plan-approval-flow & C70 & 14 & 3 & 0.64 & plan, mode, approval, askuserquestion \\
+audience-adaptation & C29 & 7 & 3 & 0.57 & replit, feedback, user, services \\
+web-search-fallback & C24 & 6 & 3 & 0.83 & web, sources, links, public \\
+environment-self-repair & C30 & 5 & 3 & 0.60 & install, dependencies, environment, package \\
+\bottomrule
+\end{tabular}
+\caption{Data-driven components at the consensus cut ($k^*=250$): clusters reproduced by every embedding model (containment $\geq 0.5$) spanning $\geq 3$ products. Distinctive terms are tf-idf over clusters. Names are an interpretive layer maintained separately (analysis/component-names.json) and never influence the mechanical pipeline.}
+\label{tab:taxonomy}
+\end{table}

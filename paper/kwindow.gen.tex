@@ -1,5 +1,7 @@
-% GENERATED FILE — do not edit by hand (generator: cmd/segments).
-% n=1290 behavioral segments; admissible window k in [25,300]; component cut k*=250 (mean cross-model ARI 0.702).
+% GENERATED FILE — do not edit by hand (CLAUDE.md rule: *.gen.tex are never hand-edited).
+% generator: cmd/gentex
+% input artefacts/kbounds.json sha256: de8186790b725be1ef3ceca1e364a086bb916eeadf18ce047711e863bffa306d
+% input artefacts/admit.json sha256: 4014693970df14964b5abdd4ec8be5bcebb6c9e34002c2d585af729f037b799c
 \begin{table}[t]
 \centering
 \small
@@ -28,6 +30,6 @@ $k$ & bge-m3 & nomic-embed-text & cross-model ARI \\
 500 & pass & $\dagger$ & 0.5414 \\
 \bottomrule
 \end{tabular}
-\caption{Controls exam and cross-model agreement across the pre-registered $k$ grid ($n=1290$ behavioral segments). $\dagger$ marks cuts failing a pre-registered control assertion; the admissible window is $k \in [25, 300]$ and the component cut $k^*=250$ maximizes mean cross-model ARI (bold) within it.}
-\label{tab:segments-grid}
+\caption{Pre-registered controls exam and cross-model agreement across the $k$ grid. $\dagger$ marks cuts failing a control assertion; the admissible window is $k \in [25, 300]$ and the component cut $k^*=250$ maximizes mean cross-model ARI within it (bold, 0.702).}
+\label{tab:kwindow}
 \end{table}
