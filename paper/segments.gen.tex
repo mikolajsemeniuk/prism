@@ -1,0 +1,33 @@
+% GENERATED FILE — do not edit by hand (generator: cmd/segments).
+% n=1290 behavioral segments; admissible window k in [25,300]; component cut k*=250 (mean cross-model ARI 0.702).
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{rccr}
+\toprule
+$k$ & bge-m3 & nomic-embed-text & cross-model ARI \\
+\midrule
+10 & pass & $\dagger$ & 0.3108 \\
+15 & pass & $\dagger$ & 0.2204 \\
+20 & pass & $\dagger$ & 0.2588 \\
+25 & pass & pass & 0.5087 \\
+30 & pass & pass & 0.4916 \\
+35 & pass & pass & 0.5276 \\
+40 & pass & pass & 0.4518 \\
+50 & pass & pass & 0.3936 \\
+60 & pass & pass & 0.4896 \\
+70 & pass & pass & 0.4145 \\
+80 & pass & pass & 0.4973 \\
+100 & pass & pass & 0.4940 \\
+120 & pass & pass & 0.4986 \\
+150 & pass & pass & 0.5153 \\
+200 & pass & pass & 0.6415 \\
+250 & pass & pass & \textbf{0.7024} \\
+300 & pass & pass & 0.5897 \\
+400 & pass & $\dagger$ & 0.6411 \\
+500 & pass & $\dagger$ & 0.5414 \\
+\bottomrule
+\end{tabular}
+\caption{Controls exam and cross-model agreement across the pre-registered $k$ grid ($n=1290$ behavioral segments). $\dagger$ marks cuts failing a pre-registered control assertion; the admissible window is $k \in [25, 300]$ and the component cut $k^*=250$ maximizes mean cross-model ARI (bold) within it.}
+\label{tab:segments-grid}
+\end{table}

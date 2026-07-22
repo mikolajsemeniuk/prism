@@ -1,0 +1,101 @@
+{
+  "ari": 0.7024072914847574,
+  "k_star": 250,
+  "per_k": [
+    {
+      "k": 10,
+      "mean_ari": 0.3107514983537607,
+      "admissible": false
+    },
+    {
+      "k": 15,
+      "mean_ari": 0.22038475818930714,
+      "admissible": false
+    },
+    {
+      "k": 20,
+      "mean_ari": 0.2588206164971218,
+      "admissible": false
+    },
+    {
+      "k": 25,
+      "mean_ari": 0.5087189297465288,
+      "admissible": true
+    },
+    {
+      "k": 30,
+      "mean_ari": 0.49162234728421744,
+      "admissible": true
+    },
+    {
+      "k": 35,
+      "mean_ari": 0.5276045609524006,
+      "admissible": true
+    },
+    {
+      "k": 40,
+      "mean_ari": 0.4517944497484317,
+      "admissible": true
+    },
+    {
+      "k": 50,
+      "mean_ari": 0.3935704162484536,
+      "admissible": true
+    },
+    {
+      "k": 60,
+      "mean_ari": 0.4895949267975859,
+      "admissible": true
+    },
+    {
+      "k": 70,
+      "mean_ari": 0.4145149707883596,
+      "admissible": true
+    },
+    {
+      "k": 80,
+      "mean_ari": 0.49727582025551254,
+      "admissible": true
+    },
+    {
+      "k": 100,
+      "mean_ari": 0.4940052245928298,
+      "admissible": true
+    },
+    {
+      "k": 120,
+      "mean_ari": 0.4985538509919833,
+      "admissible": true
+    },
+    {
+      "k": 150,
+      "mean_ari": 0.5153088507222485,
+      "admissible": true
+    },
+    {
+      "k": 200,
+      "mean_ari": 0.6415001810844012,
+      "admissible": true
+    },
+    {
+      "k": 250,
+      "mean_ari": 0.7024072914847574,
+      "admissible": true
+    },
+    {
+      "k": 300,
+      "mean_ari": 0.589725092755294,
+      "admissible": true
+    },
+    {
+      "k": 400,
+      "mean_ari": 0.6411120603126085,
+      "admissible": false
+    },
+    {
+      "k": 500,
+      "mean_ari": 0.5413681841707062,
+      "admissible": false
+    }
+  ]
+}

@@ -10,17 +10,96 @@ into functional components using embedding models + cosine distance, and (3) run
 ablation experiments measuring per-component impact across models. The paper and all
 repo artifacts are written in English.
 
-Current state: the corpus is collected (`corpus/`), the manual analysis is done
-(`analysis/`), and the decomposition pipeline (roadmap steps 2–3 + 6) is
-implemented in Go (`pkg/`, `cmd/`, driven by the `Makefile`). Key entry points:
-`make smoke` — full offline end-to-end run on the deterministic fake embedder,
-gated by the pre-registered control assertions (this is the regression gate; it
-must stay green); `make paper` — the real run (needs an Ollama server; models
-via `MODELS=`); `make test` — unit tests including the clustering-math fixtures.
-`pipeline.json` is the technical pre-registration (k grid, selection rule,
-control needles) — freeze before the first full run; changes after that must be
-documented in the paper. The k-selection rule is max-mean-silhouette *subject to
-the control assertions* (cmd/cluster fails if no grid cut satisfies them).
+Current state (branch `v1`): the corpus (`corpus/`) and the manual analysis
+(`analysis/`) are complete. The decomposition pipeline is being REBUILT as one
+small self-contained command per step under `cmd/`, following the frozen recipe
+in "Decomposition methodology" below. The previous full implementation (pkg/
+packages, Makefile, pipeline.json, fake-embedder smoke gate, unit-tested
+clustering math) is preserved at commit `75d9715` — consult it with
+`git show 75d9715:<path>` when reimplementing a step. No Makefile on this
+branch yet; run steps with `go run ./cmd/<name>`. Requires a local Ollama
+server with the `bge-m3` and `nomic-embed-text` models pulled.
+
+## Decomposition methodology (reproduction recipe — validated by the 2026-07-22 pilot)
+
+How the component groups are derived from the corpus. Every choice below was
+calibrated on the pilot run and is treated as pre-registered: change nothing
+without documenting the change for the paper's methods section.
+
+1. **Segmentation.** Each corpus file = YAML frontmatter + verbatim body. Split
+   the body on structure: markdown headers, whole-line XML tags, `====`
+   separators, ChatML markers, fenced code blocks, blank lines. Tag layers
+   heuristically: `tool-definition-schema` (JSON-ish blobs), `few-shot`
+   (example-named sections; fenced non-JSON), `template-var` (pure
+   placeholders), else `behavioral`. Drop segments <40 chars. Every segment
+   carries source path + byte offsets (auditability). Only BEHAVIORAL segments
+   are embedded. Pilot: 1471 segments, 1269 behavioral.
+2. **Embedding.** ≥2 open-weights models via local Ollama (`bge-m3`,
+   `nomic-embed-text`), vectors L2-normalized, cached by sha256(segment text).
+3. **Clustering.** Average-linkage agglomerative on cosine distance
+   (nearest-neighbor-chain algorithm; fully deterministic, no seeds, ties break
+   to the smallest index). Evaluate every cut on the k grid
+   10,15,20,25,30,35,40,50,60,70,80,100,120,150,200,250,300,400,500.
+4. **Controls exam (anti-cherry-picking core).** Pre-registered needles of
+   passages known to be duplicated across files (or known-unrelated):
+   - same-cluster: `Claude cares deeply about child safety and exercises special caution` (3× Anthropic chat);
+   - same-cluster: `imbued with best UX practices` (Cursor ↔ Windsurf);
+   - same-cluster: `prefer using ` + backtick-rg phrase `prefer using \`rg\` or \`rg --files\` respectively` (2× Codex);
+   - different-cluster: child-safety needle vs rg needle.
+   A cut k is ADMISSIBLE only if EVERY embedding model passes ALL four at k.
+   This bounds k from below (coarse cuts mix unrelated topics — negative
+   control fails) and from above (fine cuts tear near-verbatim duplicates
+   apart — positive control fails). Pilot window: 25–300.
+5. **Component cut.** Within the admissible window, k\* = argmax mean pairwise
+   cross-model ARI — "component granularity is where independent embedding
+   models agree most". Pilot: k\*=250, ARI=0.72. (A separate FINE cut — max
+   silhouette subject to controls — serves the reuse/lineage analysis;
+   silhouette monotonically rewards near-duplicate granularity on this corpus,
+   which is exactly why it is NOT used for components.)
+6. **Taxonomy (steps A–E).**
+   A. *Stability*: keep clusters whose members the other model co-groups —
+      best-match containment |A∩B|/|A| ≥ 0.5. Containment, NOT Jaccard:
+      Jaccard conflates instability with granularity mismatch (a cluster the
+      other model splits in two is co-grouped, not unstable).
+   B. *Componentness*: ≥3 distinct products (else `product-specific`); size ≥5
+      (else `micro`).
+   C. *Characterization*: medoid (max mean cosine similarity to cluster
+      members) + distinctive terms (tf-idf with clusters as documents).
+   D. *Emission*: taxonomy .md/.json — everything above is mechanical.
+   E. *Naming/definitions*: a separate interpretive pass that never feeds back
+      into A–D and changes no numbers.
+   Pilot: 12 components; 11 matched the manual codebook
+   (`analysis/codebook-draft.md`), 1 new (image-display policies);
+   root-cause-fix emerged with the highest stability (0.91, 7 products).
+7. **Experiment stimuli.** Ablation conditions use VERBATIM medoids (or, for
+   components the clustering did not consolidate, verbatim corpus-attested
+   quotes from `analysis/ablation-candidates.md`) — never author paraphrases.
+   Each fragment carries provenance (source, offsets) and token count for the
+   length-matched placebo.
+
+### Pipeline commands (one self-contained cmd per step; each reads the previous step's output)
+
+All intermediate data lives in `artefacts/` (regenerable; only `corpus/` is
+frozen). Every cmd carries an English doc comment above `package main`
+describing its exact contract.
+
+| # | cmd | input | output |
+|---|-----|-------|--------|
+| 1 | `cmd/segment` | `corpus/` | `artefacts/segments.jsonl` |
+| 2 | `cmd/embed -model <m>` (run per model) | segments.jsonl | `artefacts/embeddings-<m>.jsonl` (file doubles as its own cache) |
+| 3 | `cmd/cluster -model <m>` (run per model) | embeddings-<m>.jsonl | `artefacts/clusters-<m>.json` (labels for every grid k; pure math, no controls) |
+| 4 | `cmd/kbounds` | segments + all clusters-*.json | `artefacts/kbounds.json` (controls exam per k per model → admissible window) |
+| 5 | `cmd/admit` | clusters-*.json + kbounds.json | `artefacts/admit.json` (mean cross-model ARI per k → component cut k\*) |
+| 6 | `cmd/taxonomy` (PENDING review of 1–5) | segments + clusters + embeddings + admit | `artefacts/taxonomy.json` + `.md` (steps A–D) |
+| 7 | `cmd/fragments` (PENDING) | taxonomy + segments | `artefacts/fragments.jsonl` (verbatim ablation stimuli with provenance) |
+| 8 | `cmd/gentex` (PENDING) | `artefacts/*.json` | `paper/*.gen.tex` (pure formatting, zero computation) |
+
+Order: 1 → 2(×2 models) → 3(×2) → 4 → 5 → 6 → 7; 8 reads everything. Only
+step 2 touches the network; every other step is deterministic offline math, so
+a threshold change re-runs only its own suffix of the chain. The Makefile
+encodes this order: `make all` (= `make admit`) runs steps 1–5; `make clean`
+drops the cheap artefacts but keeps the embedding caches; `make clean-all`
+wipes `artefacts/` entirely.
 
 ## The corpus and its invariants
 

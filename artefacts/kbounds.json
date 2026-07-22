@@ -1,0 +1,158 @@
+{
+  "hi": 300,
+  "lo": 25,
+  "per_k": [
+    {
+      "k": 10,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": false
+      },
+      "pass_all": false
+    },
+    {
+      "k": 15,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": false
+      },
+      "pass_all": false
+    },
+    {
+      "k": 20,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": false
+      },
+      "pass_all": false
+    },
+    {
+      "k": 25,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 30,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 35,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 40,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 50,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 60,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 70,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 80,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 100,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 120,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 150,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 200,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 250,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 300,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": true
+      },
+      "pass_all": true
+    },
+    {
+      "k": 400,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": false
+      },
+      "pass_all": false
+    },
+    {
+      "k": 500,
+      "pass": {
+        "bge-m3": true,
+        "nomic-embed-text": false
+      },
+      "pass_all": false
+    }
+  ]
+}
