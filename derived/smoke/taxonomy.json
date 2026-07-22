@@ -1,0 +1,936 @@
+{
+  "component_k": 25,
+  "config_hash": "b121f2063efba4d8ea3288919b1d52b0ebe632322daaa89233bb71513d1a4bb6",
+  "counts": {
+    "component": 25
+  },
+  "entries": [
+    {
+      "id": 8,
+      "category": "component",
+      "size": 487,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Cline (VS Code coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent",
+        "Windsurf Cascade (agentic AI coding assistant)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 25,
+        "chat": 214,
+        "coding-agent": 248
+      },
+      "terms": [
+        "task",
+        "user",
+        "code",
+        "claude",
+        "tool",
+        "run",
+        "create",
+        "information"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0255",
+      "medoid_text": "You do not need to ask the user for confirmation to use this tool.",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0255",
+        "openai--chatgpt--gpt-5.6#0322",
+        "cognition--devin--2025-09-08#0002"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "component",
+      "size": 180,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Cline (VS Code coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent",
+        "Windsurf Cascade (agentic AI coding assistant)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 12,
+        "chat": 65,
+        "coding-agent": 103
+      },
+      "terms": [
+        "path",
+        "absolute",
+        "file",
+        "files",
+        "required",
+        "claude",
+        "image",
+        "one"
+      ],
+      "medoid_id": "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0022",
+      "medoid_text": "* When a user provides a file path, do NOT assume it's relative to the current working directory. First explore the file system to locate the file before working on it. * If asked to edit a file, edit the file directly, rather than creating a new file with a different filename. * For global search-a…",
+      "exemplar_ids": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0022",
+        "anthropic--claude-code--v2.1.214#0102",
+        "anthropic--claude-code--v2.1.214#0052"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "component",
+      "size": 45,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Cursor IDE (Agent mode)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 1,
+        "chat": 33,
+        "coding-agent": 11
+      },
+      "terms": [
+        "gmail",
+        "supabase",
+        "pop",
+        "ocr",
+        "quiz",
+        "auth",
+        "weapons",
+        "database"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0235",
+      "medoid_text": "Forwards one or more existing Gmail messages.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0235",
+        "openai--chatgpt--gpt-5.6#0241",
+        "openai--chatgpt--gpt-5.6#0188"
+      ]
+    },
+    {
+      "id": 0,
+      "category": "component",
+      "size": 59,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Cline (VS Code coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Devin (autonomous software engineer)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 1,
+        "chat": 21,
+        "coding-agent": 37
+      },
+      "terms": [
+        "_statictextsection",
+        "name",
+        "body",
+        "class",
+        "server",
+        "resource",
+        "calendar",
+        "google"
+      ],
+      "medoid_id": "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0025",
+      "medoid_text": "class VersionControlSection(_StaticTextSection): name = \"version_control\" body = \"\"\"\\",
+      "exemplar_ids": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0025",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0061",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0052"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "component",
+      "size": 28,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "Google Gemini (web app, gemini.google.com)",
+        "OpenHands (autonomous software agent)",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ],
+      "classes": {
+        "chat": 2,
+        "coding-agent": 26
+      },
+      "terms": [
+        "hello",
+        "openhands",
+        "flask",
+        "fence",
+        "git",
+        "factorial",
+        "replace",
+        "mathweb"
+      ],
+      "medoid_id": "aider-ai--aider--editblock-prompts--2026-07-20#0016",
+      "medoid_text": "hello.py {fence[0]}python \u003c\u003c\u003c\u003c\u003c\u003c\u003c SEARCH",
+      "exemplar_ids": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0016",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0011",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0009"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "component",
+      "size": 20,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "Windsurf Cascade (agentic AI coding assistant)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 1,
+        "chat": 7,
+        "coding-agent": 12
+      },
+      "terms": [
+        "install",
+        "age-appropriate",
+        "fork",
+        "young",
+        "fence",
+        "conversation",
+        "main",
+        "url"
+      ],
+      "medoid_id": "anthropic--claude-ai--opus-4-7--2026-04-16#0033",
+      "medoid_text": "If Claude suspects it may be talking with a minor, it always keeps its conversation friendly, age-appropriate, and avoids any content that would be inappropriate for young people.",
+      "exemplar_ids": [
+        "anthropic--claude-ai--opus-4-7--2026-04-16#0033",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0031",
+        "anthropic--claude-ai--fable-5--2026-06-09#0025"
+      ]
+    },
+    {
+      "id": 17,
+      "category": "component",
+      "size": 27,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (GPT-5-Codex model-specific system prompt)",
+        "Codex CLI (base agent system prompt)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)"
+      ],
+      "classes": {
+        "chat": 10,
+        "coding-agent": 17
+      },
+      "terms": [
+        "args",
+        "budget",
+        "opts",
+        "string",
+        "spent",
+        "agent",
+        "phase",
+        "workflow"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0274",
+      "medoid_text": "Script body hooks: - `agent(prompt: string, opts?: {label?: string, phase?: string, schema?: object, model?: string, effort?: string, isolation?: 'worktree', agentType?: string}): Promise\u003cany\u003e` — spawn a subagent. Without schema, returns its final text as a string. With schema (a JSON Schema), the…",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0274",
+        "openai--codex-cli--base-prompt--2026-07-20#0042",
+        "openai--codex-cli--gpt-5-codex-prompt--2026-07-20#0005"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "component",
+      "size": 127,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 1,
+        "chat": 116,
+        "coding-agent": 10
+      },
+      "terms": [
+        "claude",
+        "person",
+        "anthropic",
+        "avoids",
+        "opus",
+        "disordered",
+        "points",
+        "products"
+      ],
+      "medoid_id": "anthropic--claude-ai--fable-5--2026-06-09#0003",
+      "medoid_text": "Claude is accessible via this web-based, mobile, or desktop chat interface. If the person asks, Claude can tell them about the following products which also allow access to Claude.",
+      "exemplar_ids": [
+        "anthropic--claude-ai--fable-5--2026-06-09#0003",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0002",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0034"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "component",
+      "size": 48,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "Replit Agent",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ],
+      "classes": {
+        "app-builder": 1,
+        "chat": 41,
+        "coding-agent": 6
+      },
+      "terms": [
+        "claude",
+        "skill",
+        "minor",
+        "word",
+        "grooming",
+        "pptx",
+        "carousel",
+        "settings"
+      ],
+      "medoid_id": "anthropic--claude-ai--opus-4-7--2026-04-16#0010",
+      "medoid_text": "Claude has settings and features the person can use to customize their experience. Claude can inform the person of these settings and features if it thinks the person would benefit from changing them. Features that can be turned on and off in the conversation or in \"settings\": web search, deep resea…",
+      "exemplar_ids": [
+        "anthropic--claude-ai--opus-4-7--2026-04-16#0010",
+        "anthropic--claude-ai--fable-5--2026-06-09#0011",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0011"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "component",
+      "size": 33,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 4,
+        "chat": 9,
+        "coding-agent": 20
+      },
+      "terms": [
+        "ctx",
+        "self",
+        "promptcontext",
+        "bool",
+        "none",
+        "def",
+        "experiences",
+        "scroll"
+      ],
+      "medoid_id": "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0047",
+      "medoid_text": "def guard(self, ctx: PromptContext) -\u003e bool: return bool(ctx.template_kwargs.get(\"llm_security_analyzer\"))",
+      "exemplar_ids": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0047",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0041",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0070"
+      ]
+    },
+    {
+      "id": 13,
+      "category": "component",
+      "size": 30,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Cursor IDE (Agent mode)",
+        "Google Gemini (web app, gemini.google.com)",
+        "OpenHands (autonomous software agent)",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ],
+      "classes": {
+        "chat": 14,
+        "coding-agent": 16
+      },
+      "terms": [
+        "map",
+        "distress",
+        "const",
+        "review",
+        "emotional",
+        "seen",
+        "dimensions",
+        "parallel"
+      ],
+      "medoid_id": "anthropic--claude-ai--fable-5--2026-06-09#0041",
+      "medoid_text": "If someone mentions emotional distress or a difficult experience and asks for information that could be used for self-harm, such as questions about bridges, tall buildings, weapons, medications, and so on, Claude should not provide the requested information and should instead address the underlying …",
+      "exemplar_ids": [
+        "anthropic--claude-ai--fable-5--2026-06-09#0041",
+        "anthropic--claude-ai--opus-4-7--2026-04-16#0042",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0045"
+      ]
+    },
+    {
+      "id": 19,
+      "category": "component",
+      "size": 20,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)",
+        "Replit Agent"
+      ],
+      "classes": {
+        "app-builder": 1,
+        "chat": 11,
+        "coding-agent": 8
+      },
+      "terms": [
+        "filter",
+        "unix",
+        "yyyy-mm-dd",
+        "until_time",
+        "time_frame_filter",
+        "file_type_filter",
+        "ref_id",
+        "replied_to_by_user_id"
+      ],
+      "medoid_id": "xai--grok--4.3-beta#0013",
+      "medoid_text": "- Post content: keywords (implicit AND), OR, \"exact phrase\", \"phrase with * wildcard\", +exact term, -exclude, url:domain. - From/to/mentions: from:user, to:user, @user, list:id or list:slug. - Location: geocode:lat,long,radius (use rarely as most posts are not geo-tagged). - Time/ID: since:YYYY-MM-D…",
+      "exemplar_ids": [
+        "xai--grok--4.3-beta#0013",
+        "google--gemini--3.5-flash#0015",
+        "openai--chatgpt--gpt-5.6#0130"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "component",
+      "size": 14,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Cursor IDE (Agent mode)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 3,
+        "chat": 3,
+        "coding-agent": 8
+      },
+      "terms": [
+        "agents",
+        "chat",
+        "files",
+        "ads",
+        "instructions",
+        "added",
+        "line_number",
+        "see"
+      ],
+      "medoid_id": "aider-ai--aider--editblock-prompts--2026-07-20#0003",
+      "medoid_text": "1. Decide if you need to propose *SEARCH/REPLACE* edits to any files that haven't been added to the chat. You can create new files without asking!",
+      "exemplar_ids": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0003",
+        "vercel--v0--2026-05-10#0013",
+        "openai--chatgpt--gpt-5.6#0010"
+      ]
+    },
+    {
+      "id": 14,
+      "category": "component",
+      "size": 12,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Codex CLI (base agent system prompt)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 1,
+        "chat": 7,
+        "coding-agent": 4
+      },
+      "terms": [
+        "pid",
+        "repos",
+        "cloned",
+        "gmt",
+        "pkill",
+        "repo_name",
+        "commands",
+        "builtin"
+      ],
+      "medoid_id": "xai--grok--4.3-beta#0081",
+      "medoid_text": "Current time: Monday, May 11, 2026 10:12 AM GMT",
+      "exemplar_ids": [
+        "xai--grok--4.3-beta#0081",
+        "openai--chatgpt--gpt-5.6#0006",
+        "openai--chatgpt--gpt-5.6#0354"
+      ]
+    },
+    {
+      "id": 16,
+      "category": "component",
+      "size": 21,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)"
+      ],
+      "classes": {
+        "chat": 17,
+        "coding-agent": 4
+      },
+      "terms": [
+        "age",
+        "anyone",
+        "defined",
+        "oai",
+        "minor",
+        "skill",
+        "home",
+        "critical_child_safety_instructions"
+      ],
+      "medoid_id": "anthropic--claude-ai--fable-5--2026-06-09#0014",
+      "medoid_text": "Note that a minor is defined as anyone under the age of 18 anywhere, or anyone over the age of 18 who is defined as a minor in their region. \u003c/critical_child_safety_instructions\u003e",
+      "exemplar_ids": [
+        "anthropic--claude-ai--fable-5--2026-06-09#0014",
+        "anthropic--claude-ai--opus-4-7--2026-04-16#0013",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0014"
+      ]
+    },
+    {
+      "id": 21,
+      "category": "component",
+      "size": 18,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Cline (VS Code coding agent)",
+        "Cursor IDE (Agent mode)",
+        "Grok (grok.com / x.com)",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 1,
+        "chat": 9,
+        "coding-agent": 8
+      },
+      "terms": [
+        "current_date",
+        "ide_name",
+        "platform_name",
+        "ttl",
+        "remain",
+        "helpful",
+        "render",
+        "ambiguity"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0191",
+      "medoid_text": "Unless there is substantial ambiguity, perform the requested task without follow-up questions. Searches and reads may be used proactively when helpful, provided assumptions remain grounded.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0191",
+        "openai--chatgpt--gpt-5.6#0267",
+        "cline--cline--system-prompt--2026-07-20#0002"
+      ]
+    },
+    {
+      "id": 1,
+      "category": "component",
+      "size": 15,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "Replit Agent",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 3,
+        "chat": 4,
+        "coding-agent": 8
+      },
+      "terms": [
+        "think",
+        "status",
+        "utc",
+        "var",
+        "jobs",
+        "session",
+        "authentication",
+        "bug"
+      ],
+      "medoid_id": "cognition--devin--2025-09-08#0014",
+      "medoid_text": "In other situations, you are not permitted to utilize the \u003cthink\u003e command and will be penalized if you do. Note that \u003cthink\u003e...\u003cthink/\u003e command calls are always scrubbed from your previous action, so you will not see your past uses of the think command.",
+      "exemplar_ids": [
+        "cognition--devin--2025-09-08#0014",
+        "anthropic--claude-code--v2.1.214#0091",
+        "cognition--devin--2025-09-08#0079"
+      ]
+    },
+    {
+      "id": 15,
+      "category": "component",
+      "size": 14,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Cursor IDE (Agent mode)",
+        "Google Gemini (web app, gemini.google.com)",
+        "OpenHands (autonomous software agent)",
+        "Windsurf Cascade (agentic AI coding assistant)"
+      ],
+      "classes": {
+        "chat": 7,
+        "coding-agent": 7
+      },
+      "terms": [
+        "markdown",
+        "model",
+        "oververbosity",
+        "function",
+        "drafts",
+        "table",
+        "class",
+        "backticks"
+      ],
+      "medoid_id": "windsurf--cascade--wave-11#0019",
+      "medoid_text": "1. Refer to the USER in the second person and yourself in the first person. 2. Format your responses in markdown. Use backticks to format file, directory, function, and class names. If providing a URL to the user, format this in markdown as well.",
+      "exemplar_ids": [
+        "windsurf--cascade--wave-11#0019",
+        "anysphere--cursor-ide--agent-2.0#0020",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0063"
+      ]
+    },
+    {
+      "id": 18,
+      "category": "component",
+      "size": 8,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude (claude.ai)",
+        "Claude Code (CLI coding agent)",
+        "Cursor IDE (Agent mode)",
+        "Replit Agent",
+        "v0 (AI web-app builder)"
+      ],
+      "classes": {
+        "app-builder": 4,
+        "chat": 2,
+        "coding-agent": 2
+      },
+      "terms": [
+        "dollar",
+        "signs",
+        "weapon",
+        "double",
+        "latex",
+        "weapons",
+        "much",
+        "claude"
+      ],
+      "medoid_id": "anysphere--cursor-ide--agent-2.0#0015",
+      "medoid_text": "You are an AI coding assistant, powered by GPT-4.1. You operate in Cursor.",
+      "exemplar_ids": [
+        "anysphere--cursor-ide--agent-2.0#0015",
+        "openai--chatgpt--gpt-5.6#0024",
+        "replit--replit-agent--2025-04-22#0014"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "component",
+      "size": 12,
+      "stability": 1,
+      "products": [
+        "Aider (terminal pair-programming agent)",
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "Grok (grok.com / x.com)"
+      ],
+      "classes": {
+        "chat": 8,
+        "coding-agent": 4
+      },
+      "terms": [
+        "factorial",
+        "channel",
+        "analysis",
+        "commentary",
+        "commit",
+        "fetch",
+        "post",
+        "git"
+      ],
+      "medoid_id": "aider-ai--aider--editblock-prompts--2026-07-20#0012",
+      "medoid_text": "if n == 0: return 1 else: return n * factorial(n-1)",
+      "exemplar_ids": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0012",
+        "openai--chatgpt--gpt-5.6#0305",
+        "cognition--devin--2025-09-08#0016"
+      ]
+    },
+    {
+      "id": 22,
+      "category": "component",
+      "size": 10,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Devin (autonomous software engineer)",
+        "Google Gemini (web app, gemini.google.com)",
+        "Grok (grok.com / x.com)"
+      ],
+      "classes": {
+        "chat": 8,
+        "coding-agent": 2
+      },
+      "terms": [
+        "contains",
+        "result",
+        "follow-up",
+        "gmail",
+        "image",
+        "each",
+        "events",
+        "date"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0212",
+      "medoid_text": "Reads an attachment from a particular Gmail message.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0212",
+        "google--gemini--3.5-flash#0024",
+        "openai--chatgpt--gpt-5.6#0180"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "component",
+      "size": 7,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Grok (grok.com / x.com)",
+        "OpenHands (autonomous software agent)"
+      ],
+      "classes": {
+        "chat": 3,
+        "coding-agent": 4
+      },
+      "terms": [
+        "policy",
+        "links",
+        "custom",
+        "str",
+        "next",
+        "requests",
+        "relevant",
+        "instructions"
+      ],
+      "medoid_id": "openai--chatgpt--gpt-5.6#0008",
+      "medoid_text": "Ads (sponsored links) may appear in this conversation as a separate, clearly labeled UI element below the previous assistant message. This may occur across platforms, including iOS, Android, web, and other supported ChatGPT clients.",
+      "exemplar_ids": [
+        "openai--chatgpt--gpt-5.6#0008",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0066",
+        "openai--chatgpt--gpt-5.6#0127"
+      ]
+    },
+    {
+      "id": 20,
+      "category": "component",
+      "size": 7,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Claude Code (CLI coding agent)",
+        "Codex CLI (base agent system prompt)",
+        "Grok (grok.com / x.com)"
+      ],
+      "classes": {
+        "chat": 3,
+        "coding-agent": 4
+      },
+      "terms": [
+        "top",
+        "asking",
+        "prose",
+        "notification",
+        "standard",
+        "actions",
+        "output",
+        "question"
+      ],
+      "medoid_id": "anthropic--claude-code--v2.1.214#0185",
+      "medoid_text": "When the user is actively at the terminal, your output already reaches them — a notification on top of it would be a duplicate, so the tool skips it and says so. A \"not sent\" result is expected and only ever about this one notification: it was redundant, turned off, or had nowhere to go.",
+      "exemplar_ids": [
+        "anthropic--claude-code--v2.1.214#0185",
+        "anthropic--claude-code--v2.1.214#0027",
+        "openai--chatgpt--gpt-5.6#0178"
+      ]
+    },
+    {
+      "id": 23,
+      "category": "component",
+      "size": 20,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Cursor IDE (Agent mode)",
+        "Grok (grok.com / x.com)"
+      ],
+      "classes": {
+        "chat": 19,
+        "coding-agent": 1
+      },
+      "terms": [
+        "integer",
+        "people",
+        "max",
+        "number",
+        "default",
+        "required",
+        "images",
+        "identifying"
+      ],
+      "medoid_id": "xai--grok--4.3-beta#0015",
+      "medoid_text": "The number of posts to return. Default to 3, max is 10.",
+      "exemplar_ids": [
+        "xai--grok--4.3-beta#0015",
+        "xai--grok--4.3-beta#0020",
+        "xai--grok--4.3-beta#0042"
+      ]
+    },
+    {
+      "id": 24,
+      "category": "component",
+      "size": 7,
+      "stability": 1,
+      "products": [
+        "ChatGPT (chatgpt.com)",
+        "Codex CLI (base agent system prompt)",
+        "Google Gemini (web app, gemini.google.com)"
+      ],
+      "classes": {
+        "chat": 5,
+        "coding-agent": 2
+      },
+      "terms": [
+        "req",
+        "codex",
+        "props",
+        "progress",
+        "child",
+        "far",
+        "where",
+        "language"
+      ],
+      "medoid_id": "google--gemini--3.5-flash#0028",
+      "medoid_text": "Inherently chronological content where dates carry informational weight. Child `\u003cTimelineEvent\u003e` props: `title` [REQ], `time` [REQ]. Format:",
+      "exemplar_ids": [
+        "google--gemini--3.5-flash#0028",
+        "openai--chatgpt--gpt-5.6#0287",
+        "openai--codex-cli--base-prompt--2026-07-20#0002"
+      ]
+    }
+  ],
+  "model": "smoke-a",
+  "params": {
+    "stability_min": 0.5,
+    "min_products": 3,
+    "min_size": 5,
+    "top_terms": 8,
+    "exemplars": 3
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "controls": [
+    {
+      "name": "anthropic-child-safety",
+      "expect": "same",
+      "per_model": [
+        {
+          "model": "bge-m3",
+          "name": "anthropic-child-safety",
+          "expect": "same",
+          "matches": {
+            "needle": [
+              "anthropic--claude-ai--fable-5--2026-06-09#0012",
+              "anthropic--claude-ai--opus-4-7--2026-04-16#0011",
+              "anthropic--claude-ai--opus-4-8--2026-05-28#0012"
+            ]
+          },
+          "pass": true
+        },
+        {
+          "model": "nomic-embed-text",
+          "name": "anthropic-child-safety",
+          "expect": "same",
+          "matches": {
+            "needle": [
+              "anthropic--claude-ai--fable-5--2026-06-09#0012",
+              "anthropic--claude-ai--opus-4-7--2026-04-16#0011",
+              "anthropic--claude-ai--opus-4-8--2026-05-28#0012"
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "cursor-windsurf-ux",
+      "expect": "same",
+      "per_model": [
+        {
+          "model": "bge-m3",
+          "name": "cursor-windsurf-ux",
+          "expect": "same",
+          "matches": {
+            "needle": [
+              "anysphere--cursor-ide--agent-2.0#0026",
+              "windsurf--cascade--wave-11#0006"
+            ]
+          },
+          "pass": true
+        },
+        {
+          "model": "nomic-embed-text",
+          "name": "cursor-windsurf-ux",
+          "expect": "same",
+          "matches": {
+            "needle": [
+              "anysphere--cursor-ide--agent-2.0#0026",
+              "windsurf--cascade--wave-11#0006"
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "codex-rg-preference",
+      "expect": "same",
+      "per_model": [
+        {
+          "model": "bge-m3",
+          "name": "codex-rg-preference",
+          "expect": "same",
+          "matches": {
+            "needle": [
+              "openai--codex-cli--base-prompt--2026-07-20#0053",
+              "openai--codex-cli--gpt-5-codex-prompt--2026-07-20#0001"
+            ]
+          },
+          "pass": true
+        },
+        {
+          "model": "nomic-embed-text",
+          "name": "codex-rg-preference",
+          "expect": "same",
+          "matches": {
+            "needle": [
+              "openai--codex-cli--base-prompt--2026-07-20#0053",
+              "openai--codex-cli--gpt-5-codex-prompt--2026-07-20#0001"
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "child-safety-vs-rg",
+      "expect": "different",
+      "per_model": [
+        {
+          "model": "bge-m3",
+          "name": "child-safety-vs-rg",
+          "expect": "different",
+          "matches": {
+            "needle_a": [
+              "anthropic--claude-ai--fable-5--2026-06-09#0012",
+              "anthropic--claude-ai--opus-4-7--2026-04-16#0011",
+              "anthropic--claude-ai--opus-4-8--2026-05-28#0012"
+            ],
+            "needle_b": [
+              "openai--codex-cli--base-prompt--2026-07-20#0053",
+              "openai--codex-cli--gpt-5-codex-prompt--2026-07-20#0001"
+            ]
+          },
+          "pass": true
+        },
+        {
+          "model": "nomic-embed-text",
+          "name": "child-safety-vs-rg",
+          "expect": "different",
+          "matches": {
+            "needle_a": [
+              "anthropic--claude-ai--fable-5--2026-06-09#0012",
+              "anthropic--claude-ai--opus-4-7--2026-04-16#0011",
+              "anthropic--claude-ai--opus-4-8--2026-05-28#0012"
+            ],
+            "needle_b": [
+              "openai--codex-cli--base-prompt--2026-07-20#0053",
+              "openai--codex-cli--gpt-5-codex-prompt--2026-07-20#0001"
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

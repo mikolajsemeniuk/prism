@@ -1,0 +1,36 @@
+┌──────────────────────────────────┬────────────────────────┬────────────────────────────┬─────────────────────┐
+│      Komponent (z korpusu)       │         Dowód          │         Scenariusz         │       Metryka       │
+├──────────────────────────────────┼────────────────────────┼────────────────────────────┼─────────────────────┤
+│ environment-grounding            │ Claude Code, Devin,    │ S1: workspace z 2 repo     │ operacje we         │
+│ (dynamiczny: cwd, git status,    │ Grok, Windsurf —       │ (apka+dep), fix w dep,     │ właściwym repo,     │
+│ layout)                          │ uniwersalny            │ commit we właściwym repo   │ sukces, loop rate   │
+├──────────────────────────────────┼────────────────────────┼────────────────────────────┼─────────────────────┤
+│                                  │ 4 vendorów, niezależne │ S2: oczywisty fix nie      │ odzyskanie, liczba  │
+│ failure-escalation („3 porażki → │  sformułowania —       │ działa, prawdziwa          │ powtórzonych        │
+│  zmień strategię")               │ najmocniejsza hipoteza │ przyczyna w konfigu obok   │ identycznych        │
+│                                  │                        │                            │ wywołań             │
+├──────────────────────────────────┼────────────────────────┼────────────────────────────┼─────────────────────┤
+│                                  │ Claude Code (wymóg     │ S3: plik z niemal          │ sukces edycji za 1. │
+│ read-before-edit                 │ twardy), lineage       │ identycznymi blokami —     │  podejściem, retry  │
+│                                  │ Devin/Replit           │ ślepa edycja trafia w zły  │                     │
+├──────────────────────────────────┼────────────────────────┼────────────────────────────┼─────────────────────┤
+│ tool-selection-protocol          │ Codex (bajtowo w obu   │ S4: szukanie w dużym repo  │ zmarnowane          │
+│ (rg>grep, ścieżki absolutne,     │ wersjach), Devin,      │ przy niejednoznacznym cwd  │ wywołania,          │
+│ dedykowane narzędzia)            │ Claude Code            │                            │ incydenty złego cwd │
+├──────────────────────────────────┼────────────────────────┼────────────────────────────┼─────────────────────┤
+│                                  │ Cursor (batch reads),  │ S5: repo o nietypowym      │ kroki do pierwszej  │
+│ explore-before-act               │ OpenHands, Codex       │ buildzie, dodaj feature    │ trafnej edycji,     │
+│                                  │                        │                            │ sukces              │
+├──────────────────────────────────┼────────────────────────┼────────────────────────────┼─────────────────────┤
+│                                  │ Devin (state machine), │ S6: zadanie 3+ zależnych   │ sukces, liczba      │
+│ plan-then-act                    │  v0/Claude Code        │ zmian                      │ cofnięć             │
+│                                  │ (todo), Codex          │                            │                     │
+├──────────────────────────────────┼────────────────────────┼────────────────────────────┼─────────────────────┤
+│ verify-after-change + wierne     │ Claude Code            │ S7: testy istnieją, ale    │ czy odpalił testy,  │
+│ raportowanie                     │ (doktryna), Cursor     │ nikt o nich nie mówi       │ fałszywe „done"     │
+│                                  │ (lint-loop), OpenHands │                            │                     │
+├──────────────────────────────────┼────────────────────────┼────────────────────────────┼─────────────────────┤
+│                                  │ sprzeczne bieguny      │ S8: długie zadanie +       │ ukończenie, edycje  │
+│ scope-discipline ↔ persistence   │ (Cline vs Codex/aider) │ fałszywy trop obok         │ poza zakresem,      │
+│                                  │                        │                            │ przedwczesny stop   │
+└──────────────────────────────────┴────────────────────────┴────────────────────────────┴─────────────────────┘

@@ -1,0 +1,576 @@
+{
+  "clusters": [
+    {
+      "cluster": 8,
+      "size": 487,
+      "products": {
+        "Aider (terminal pair-programming agent)": 6,
+        "ChatGPT (chatgpt.com)": 172,
+        "Claude (claude.ai)": 20,
+        "Claude Code (CLI coding agent)": 119,
+        "Cline (VS Code coding agent)": 3,
+        "Codex CLI (GPT-5-Codex model-specific system prompt)": 1,
+        "Codex CLI (base agent system prompt)": 16,
+        "Cursor IDE (Agent mode)": 25,
+        "Devin (autonomous software engineer)": 53,
+        "Google Gemini (web app, gemini.google.com)": 9,
+        "Grok (grok.com / x.com)": 13,
+        "OpenHands (autonomous software agent)": 14,
+        "Replit Agent": 15,
+        "Windsurf Cascade (agentic AI coding assistant)": 11,
+        "v0 (AI web-app builder)": 10
+      },
+      "classes": {
+        "app-builder": 25,
+        "chat": 214,
+        "coding-agent": 248
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0209",
+        "anthropic--claude-code--v2.1.214#0240",
+        "openai--chatgpt--gpt-5.6#0026"
+      ]
+    },
+    {
+      "cluster": 7,
+      "size": 180,
+      "products": {
+        "Aider (terminal pair-programming agent)": 2,
+        "ChatGPT (chatgpt.com)": 30,
+        "Claude (claude.ai)": 10,
+        "Claude Code (CLI coding agent)": 40,
+        "Cline (VS Code coding agent)": 4,
+        "Codex CLI (GPT-5-Codex model-specific system prompt)": 3,
+        "Codex CLI (base agent system prompt)": 18,
+        "Cursor IDE (Agent mode)": 6,
+        "Devin (autonomous software engineer)": 21,
+        "Google Gemini (web app, gemini.google.com)": 6,
+        "Grok (grok.com / x.com)": 19,
+        "OpenHands (autonomous software agent)": 7,
+        "Replit Agent": 5,
+        "Windsurf Cascade (agentic AI coding assistant)": 2,
+        "v0 (AI web-app builder)": 7
+      },
+      "classes": {
+        "app-builder": 12,
+        "chat": 65,
+        "coding-agent": 103
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0151",
+        "cognition--devin--2025-09-08#0026",
+        "openai--codex-cli--base-prompt--2026-07-20#0049"
+      ]
+    },
+    {
+      "cluster": 10,
+      "size": 127,
+      "products": {
+        "ChatGPT (chatgpt.com)": 5,
+        "Claude (claude.ai)": 110,
+        "Claude Code (CLI coding agent)": 8,
+        "Codex CLI (base agent system prompt)": 1,
+        "Grok (grok.com / x.com)": 1,
+        "OpenHands (autonomous software agent)": 1,
+        "v0 (AI web-app builder)": 1
+      },
+      "classes": {
+        "app-builder": 1,
+        "chat": 116,
+        "coding-agent": 10
+      },
+      "examples": [
+        "anthropic--claude-ai--fable-5--2026-06-09#0029",
+        "anthropic--claude-ai--fable-5--2026-06-09#0032",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0008"
+      ]
+    },
+    {
+      "cluster": 0,
+      "size": 59,
+      "products": {
+        "Aider (terminal pair-programming agent)": 1,
+        "ChatGPT (chatgpt.com)": 20,
+        "Claude Code (CLI coding agent)": 5,
+        "Cline (VS Code coding agent)": 3,
+        "Codex CLI (GPT-5-Codex model-specific system prompt)": 1,
+        "Codex CLI (base agent system prompt)": 3,
+        "Devin (autonomous software engineer)": 3,
+        "Grok (grok.com / x.com)": 1,
+        "OpenHands (autonomous software agent)": 21,
+        "v0 (AI web-app builder)": 1
+      },
+      "classes": {
+        "app-builder": 1,
+        "chat": 21,
+        "coding-agent": 37
+      },
+      "examples": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0004",
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0011",
+        "cline--cline--system-prompt--2026-07-20#0000"
+      ]
+    },
+    {
+      "cluster": 9,
+      "size": 48,
+      "products": {
+        "ChatGPT (chatgpt.com)": 29,
+        "Claude (claude.ai)": 10,
+        "Claude Code (CLI coding agent)": 3,
+        "Grok (grok.com / x.com)": 2,
+        "OpenHands (autonomous software agent)": 2,
+        "Replit Agent": 1,
+        "Windsurf Cascade (agentic AI coding assistant)": 1
+      },
+      "classes": {
+        "app-builder": 1,
+        "chat": 41,
+        "coding-agent": 6
+      },
+      "examples": [
+        "anthropic--claude-ai--fable-5--2026-06-09#0011",
+        "openai--chatgpt--gpt-5.6#0206",
+        "openai--chatgpt--gpt-5.6#0363"
+      ]
+    },
+    {
+      "cluster": 2,
+      "size": 45,
+      "products": {
+        "Aider (terminal pair-programming agent)": 1,
+        "ChatGPT (chatgpt.com)": 24,
+        "Claude (claude.ai)": 3,
+        "Claude Code (CLI coding agent)": 2,
+        "Codex CLI (GPT-5-Codex model-specific system prompt)": 1,
+        "Cursor IDE (Agent mode)": 1,
+        "Devin (autonomous software engineer)": 1,
+        "Google Gemini (web app, gemini.google.com)": 2,
+        "Grok (grok.com / x.com)": 4,
+        "OpenHands (autonomous software agent)": 5,
+        "v0 (AI web-app builder)": 1
+      },
+      "classes": {
+        "app-builder": 1,
+        "chat": 33,
+        "coding-agent": 11
+      },
+      "examples": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0002",
+        "openai--codex-cli--gpt-5-codex-prompt--2026-07-20#0004",
+        "xai--grok--4.3-beta#0029"
+      ]
+    },
+    {
+      "cluster": 11,
+      "size": 33,
+      "products": {
+        "ChatGPT (chatgpt.com)": 5,
+        "Claude (claude.ai)": 3,
+        "Claude Code (CLI coding agent)": 4,
+        "Devin (autonomous software engineer)": 4,
+        "Grok (grok.com / x.com)": 1,
+        "OpenHands (autonomous software agent)": 12,
+        "v0 (AI web-app builder)": 4
+      },
+      "classes": {
+        "app-builder": 4,
+        "chat": 9,
+        "coding-agent": 20
+      },
+      "examples": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0048",
+        "cognition--devin--2025-09-08#0089",
+        "vercel--v0--2026-05-10#0027"
+      ]
+    },
+    {
+      "cluster": 13,
+      "size": 30,
+      "products": {
+        "ChatGPT (chatgpt.com)": 8,
+        "Claude (claude.ai)": 3,
+        "Claude Code (CLI coding agent)": 10,
+        "Cursor IDE (Agent mode)": 3,
+        "Google Gemini (web app, gemini.google.com)": 3,
+        "OpenHands (autonomous software agent)": 1,
+        "Windsurf Cascade (agentic AI coding assistant)": 2
+      },
+      "classes": {
+        "chat": 14,
+        "coding-agent": 16
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0268",
+        "anthropic--claude-code--v2.1.214#0280",
+        "anthropic--claude-code--v2.1.214#0287"
+      ]
+    },
+    {
+      "cluster": 4,
+      "size": 28,
+      "products": {
+        "Aider (terminal pair-programming agent)": 14,
+        "ChatGPT (chatgpt.com)": 1,
+        "Claude Code (CLI coding agent)": 3,
+        "Codex CLI (GPT-5-Codex model-specific system prompt)": 1,
+        "Codex CLI (base agent system prompt)": 3,
+        "Cursor IDE (Agent mode)": 1,
+        "Google Gemini (web app, gemini.google.com)": 1,
+        "OpenHands (autonomous software agent)": 3,
+        "Windsurf Cascade (agentic AI coding assistant)": 1
+      },
+      "classes": {
+        "chat": 2,
+        "coding-agent": 26
+      },
+      "examples": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0011",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0013",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0015"
+      ]
+    },
+    {
+      "cluster": 17,
+      "size": 27,
+      "products": {
+        "ChatGPT (chatgpt.com)": 6,
+        "Claude (claude.ai)": 1,
+        "Claude Code (CLI coding agent)": 13,
+        "Codex CLI (GPT-5-Codex model-specific system prompt)": 1,
+        "Codex CLI (base agent system prompt)": 1,
+        "Devin (autonomous software engineer)": 2,
+        "Google Gemini (web app, gemini.google.com)": 2,
+        "Grok (grok.com / x.com)": 1
+      },
+      "classes": {
+        "chat": 10,
+        "coding-agent": 17
+      },
+      "examples": [
+        "anthropic--claude-ai--fable-5--2026-06-09#0034",
+        "anthropic--claude-code--v2.1.214#0018",
+        "openai--chatgpt--gpt-5.6#0128"
+      ]
+    },
+    {
+      "cluster": 16,
+      "size": 21,
+      "products": {
+        "ChatGPT (chatgpt.com)": 8,
+        "Claude (claude.ai)": 3,
+        "Claude Code (CLI coding agent)": 3,
+        "Codex CLI (base agent system prompt)": 1,
+        "Google Gemini (web app, gemini.google.com)": 2,
+        "Grok (grok.com / x.com)": 4
+      },
+      "classes": {
+        "chat": 17,
+        "coding-agent": 4
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0024",
+        "openai--chatgpt--gpt-5.6#0001",
+        "xai--grok--4.3-beta#0025"
+      ]
+    },
+    {
+      "cluster": 6,
+      "size": 20,
+      "products": {
+        "Aider (terminal pair-programming agent)": 1,
+        "ChatGPT (chatgpt.com)": 3,
+        "Claude (claude.ai)": 3,
+        "Claude Code (CLI coding agent)": 7,
+        "Codex CLI (base agent system prompt)": 2,
+        "Grok (grok.com / x.com)": 1,
+        "OpenHands (autonomous software agent)": 1,
+        "Windsurf Cascade (agentic AI coding assistant)": 1,
+        "v0 (AI web-app builder)": 1
+      },
+      "classes": {
+        "app-builder": 1,
+        "chat": 7,
+        "coding-agent": 12
+      },
+      "examples": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0058",
+        "anthropic--claude-ai--opus-4-8--2026-05-28#0031",
+        "vercel--v0--2026-05-10#0004"
+      ]
+    },
+    {
+      "cluster": 19,
+      "size": 20,
+      "products": {
+        "ChatGPT (chatgpt.com)": 9,
+        "Claude Code (CLI coding agent)": 6,
+        "Codex CLI (base agent system prompt)": 1,
+        "Devin (autonomous software engineer)": 1,
+        "Google Gemini (web app, gemini.google.com)": 1,
+        "Grok (grok.com / x.com)": 1,
+        "Replit Agent": 1
+      },
+      "classes": {
+        "app-builder": 1,
+        "chat": 11,
+        "coding-agent": 8
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0001",
+        "anthropic--claude-code--v2.1.214#0132",
+        "anthropic--claude-code--v2.1.214#0171"
+      ]
+    },
+    {
+      "cluster": 23,
+      "size": 20,
+      "products": {
+        "ChatGPT (chatgpt.com)": 5,
+        "Cursor IDE (Agent mode)": 1,
+        "Grok (grok.com / x.com)": 14
+      },
+      "classes": {
+        "chat": 19,
+        "coding-agent": 1
+      },
+      "examples": [
+        "anysphere--cursor-ide--agent-2.0#0031",
+        "xai--grok--4.3-beta#0042",
+        "xai--grok--4.3-beta#0061"
+      ]
+    },
+    {
+      "cluster": 21,
+      "size": 18,
+      "products": {
+        "ChatGPT (chatgpt.com)": 8,
+        "Claude Code (CLI coding agent)": 4,
+        "Cline (VS Code coding agent)": 3,
+        "Cursor IDE (Agent mode)": 1,
+        "Grok (grok.com / x.com)": 1,
+        "v0 (AI web-app builder)": 1
+      },
+      "classes": {
+        "app-builder": 1,
+        "chat": 9,
+        "coding-agent": 8
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0198",
+        "openai--chatgpt--gpt-5.6#0191",
+        "openai--chatgpt--gpt-5.6#0267"
+      ]
+    },
+    {
+      "cluster": 1,
+      "size": 15,
+      "products": {
+        "Aider (terminal pair-programming agent)": 1,
+        "ChatGPT (chatgpt.com)": 4,
+        "Claude Code (CLI coding agent)": 5,
+        "Devin (autonomous software engineer)": 2,
+        "Replit Agent": 2,
+        "v0 (AI web-app builder)": 1
+      },
+      "classes": {
+        "app-builder": 3,
+        "chat": 4,
+        "coding-agent": 8
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0218",
+        "openai--chatgpt--gpt-5.6#0425",
+        "vercel--v0--2026-05-10#0037"
+      ]
+    },
+    {
+      "cluster": 3,
+      "size": 14,
+      "products": {
+        "Aider (terminal pair-programming agent)": 5,
+        "ChatGPT (chatgpt.com)": 2,
+        "Claude (claude.ai)": 1,
+        "Claude Code (CLI coding agent)": 1,
+        "Codex CLI (base agent system prompt)": 1,
+        "Cursor IDE (Agent mode)": 1,
+        "v0 (AI web-app builder)": 3
+      },
+      "classes": {
+        "app-builder": 3,
+        "chat": 3,
+        "coding-agent": 8
+      },
+      "examples": [
+        "aider-ai--aider--editblock-prompts--2026-07-20#0005",
+        "aider-ai--aider--editblock-prompts--2026-07-20#0025",
+        "anthropic--claude-ai--fable-5--2026-06-09#0033"
+      ]
+    },
+    {
+      "cluster": 15,
+      "size": 14,
+      "products": {
+        "ChatGPT (chatgpt.com)": 5,
+        "Claude Code (CLI coding agent)": 4,
+        "Cursor IDE (Agent mode)": 1,
+        "Google Gemini (web app, gemini.google.com)": 2,
+        "OpenHands (autonomous software agent)": 1,
+        "Windsurf Cascade (agentic AI coding assistant)": 1
+      },
+      "classes": {
+        "chat": 7,
+        "coding-agent": 7
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0275",
+        "anysphere--cursor-ide--agent-2.0#0020",
+        "openai--chatgpt--gpt-5.6#0025"
+      ]
+    },
+    {
+      "cluster": 5,
+      "size": 12,
+      "products": {
+        "Aider (terminal pair-programming agent)": 2,
+        "ChatGPT (chatgpt.com)": 6,
+        "Claude Code (CLI coding agent)": 1,
+        "Devin (autonomous software engineer)": 1,
+        "Grok (grok.com / x.com)": 2
+      },
+      "classes": {
+        "chat": 8,
+        "coding-agent": 4
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0161",
+        "openai--chatgpt--gpt-5.6#0048",
+        "xai--grok--4.3-beta#0034"
+      ]
+    },
+    {
+      "cluster": 14,
+      "size": 12,
+      "products": {
+        "ChatGPT (chatgpt.com)": 5,
+        "Codex CLI (base agent system prompt)": 1,
+        "Devin (autonomous software engineer)": 2,
+        "Google Gemini (web app, gemini.google.com)": 1,
+        "Grok (grok.com / x.com)": 1,
+        "OpenHands (autonomous software agent)": 1,
+        "v0 (AI web-app builder)": 1
+      },
+      "classes": {
+        "app-builder": 1,
+        "chat": 7,
+        "coding-agent": 4
+      },
+      "examples": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0062",
+        "cognition--devin--2025-09-08#0036",
+        "openai--chatgpt--gpt-5.6#0354"
+      ]
+    },
+    {
+      "cluster": 22,
+      "size": 10,
+      "products": {
+        "ChatGPT (chatgpt.com)": 5,
+        "Claude Code (CLI coding agent)": 1,
+        "Devin (autonomous software engineer)": 1,
+        "Google Gemini (web app, gemini.google.com)": 2,
+        "Grok (grok.com / x.com)": 1
+      },
+      "classes": {
+        "chat": 8,
+        "coding-agent": 2
+      },
+      "examples": [
+        "google--gemini--3.5-flash#0024",
+        "google--gemini--3.5-flash#0033",
+        "openai--chatgpt--gpt-5.6#0242"
+      ]
+    },
+    {
+      "cluster": 18,
+      "size": 8,
+      "products": {
+        "ChatGPT (chatgpt.com)": 1,
+        "Claude (claude.ai)": 1,
+        "Claude Code (CLI coding agent)": 1,
+        "Cursor IDE (Agent mode)": 1,
+        "Replit Agent": 1,
+        "v0 (AI web-app builder)": 3
+      },
+      "classes": {
+        "app-builder": 4,
+        "chat": 2,
+        "coding-agent": 2
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0101",
+        "anysphere--cursor-ide--agent-2.0#0015",
+        "vercel--v0--2026-05-10#0005"
+      ]
+    },
+    {
+      "cluster": 12,
+      "size": 7,
+      "products": {
+        "ChatGPT (chatgpt.com)": 2,
+        "Claude Code (CLI coding agent)": 1,
+        "Grok (grok.com / x.com)": 1,
+        "OpenHands (autonomous software agent)": 3
+      },
+      "classes": {
+        "chat": 3,
+        "coding-agent": 4
+      },
+      "examples": [
+        "all-hands-ai--openhands--agent-sdk-static-sections--2026-07-20#0036",
+        "anthropic--claude-code--v2.1.214#0170",
+        "openai--chatgpt--gpt-5.6#0127"
+      ]
+    },
+    {
+      "cluster": 20,
+      "size": 7,
+      "products": {
+        "ChatGPT (chatgpt.com)": 2,
+        "Claude Code (CLI coding agent)": 3,
+        "Codex CLI (base agent system prompt)": 1,
+        "Grok (grok.com / x.com)": 1
+      },
+      "classes": {
+        "chat": 3,
+        "coding-agent": 4
+      },
+      "examples": [
+        "anthropic--claude-code--v2.1.214#0185",
+        "openai--chatgpt--gpt-5.6#0178",
+        "openai--chatgpt--gpt-5.6#0332"
+      ]
+    },
+    {
+      "cluster": 24,
+      "size": 7,
+      "products": {
+        "ChatGPT (chatgpt.com)": 3,
+        "Codex CLI (base agent system prompt)": 2,
+        "Google Gemini (web app, gemini.google.com)": 2
+      },
+      "classes": {
+        "chat": 5,
+        "coding-agent": 2
+      },
+      "examples": [
+        "google--gemini--3.5-flash#0026",
+        "openai--chatgpt--gpt-5.6#0098",
+        "openai--codex-cli--base-prompt--2026-07-20#0002"
+      ]
+    }
+  ],
+  "component_k": 25,
+  "fine_k": 500,
+  "model": "smoke-a"
+}

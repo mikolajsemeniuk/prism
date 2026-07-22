@@ -1,0 +1,38 @@
+% GENERATED FILE — do not edit by hand (CLAUDE.md rule: *.gen.tex are never hand-edited).
+% generator: cmd/gentex
+% config sha256: b121f2063efba4d8ea3288919b1d52b0ebe632322daaa89233bb71513d1a4bb6
+% input controls.json sha256: f7f639ee52d770f08fde8aa4b1b5de10e91a1812181ddb0e1085189a2652acaa
+% input matrix.json sha256: 432f158d0842631506019ff95ad7b51b70fa1f244890ee02000e71351ae7229d
+% input segments sha256: 2401a46f9adf3e602d18939d80bfa7456b4b632f6868210e97e45841679bef18
+% input stability.json sha256: 9a6440eb630cfe3b12bc1cf53a07696e610773e5fd14573614703f676f3985be
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{rrrr}
+\toprule
+$k$ & smoke-a & smoke-b & cross-model ARI \\
+\midrule
+10 & -0.0033$^\dagger$ & -0.0033$^\dagger$ & 1.0000$^\dagger$ \\
+15 & -0.0049$^\dagger$ & -0.0049$^\dagger$ & 1.0000$^\dagger$ \\
+20 & 0.0019$^\dagger$ & 0.0019$^\dagger$ & 1.0000$^\dagger$ \\
+25 & 0.0054 & 0.0054 & \textbf{1.0000} \\
+30 & 0.0072 & 0.0072 & 1.0000 \\
+35 & 0.0085 & 0.0085 & 1.0000 \\
+40 & 0.0071 & 0.0071 & 1.0000 \\
+50 & 0.0073 & 0.0073 & 1.0000 \\
+60 & 0.0151 & 0.0151 & 1.0000 \\
+70 & 0.0160 & 0.0160 & 1.0000 \\
+80 & 0.0175 & 0.0175 & 1.0000 \\
+100 & 0.0280 & 0.0280 & 1.0000 \\
+120 & 0.0359 & 0.0359 & 1.0000 \\
+150 & 0.0425 & 0.0425 & 1.0000 \\
+200 & 0.0611 & 0.0611 & 1.0000 \\
+250 & 0.0765 & 0.0765 & 1.0000 \\
+300 & 0.0887 & 0.0887 & 1.0000 \\
+400 & 0.1128 & 0.1128 & 1.0000 \\
+500 & \textbf{0.1300} & \textbf{0.1300} & 1.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Two-level readout of the dendrogram across the pre-registered $k$ grid: per-model mean silhouette (bold: fine cut, max silhouette subject to controls) and cross-model agreement (bold: component cut, max mean pairwise ARI subject to controls). $\dagger$ marks cuts violating a control assertion.}
+\label{tab:cluster-grid}
+\end{table}
