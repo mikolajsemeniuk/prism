@@ -105,5 +105,190 @@ services:
       - --tool-call-parser
       - hermes
 
+  # --- external-validity set: weak/medium models across 4 families ----------
+  # All tuned the same way: FP8 weights (fast) + bf16 KV cache (Blackwell has
+  # an FP8-KV accuracy bug; 128 GB leaves room), TRITON_ATTN for FP8 on sm_121,
+  # enforce-eager (fast, hang-free startup), prefix caching (our prompts share
+  # a long prefix across episodes). Each needs a tool-call parser for the agent
+  # loop. Repo tags are my best picks — adjust if a checkpoint has moved.
+
+  # Mistral family, 8B, weak. Native FP8 (do NOT add --quantization); the three
+  # mistral-format flags are the canonical vLLM recipe.
+  ministral-3:
+    image: vllm/vllm-openai:latest
+    profiles: ["ministral-3"]
+    network_mode: host
+    ipc: host
+    volumes:
+      - /home/mikolajsemeniuk/.cache/huggingface:/root/.cache/huggingface
+      - vllm-cache:/root/.cache/vllm
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+      - VLLM_USE_MODELSCOPE=false
+      - MAX_JOBS=4
+      - SAFETENSORS_FAST_GPU=1
+      - VLLM_MARLIN_USE_ATOMIC_ADD=1
+    deploy:
+      resources:
+        reservations:
+          devices: [{driver: nvidia, count: all, capabilities: [gpu]}]
+    stop_grace_period: 60s
+    command:
+      - --model
+      - mistralai/Ministral-3-8B-Instruct-2512
+      - --served-model-name
+      - ministral-3:8b
+      - --host
+      - 0.0.0.0
+      - --port
+      - "12000"
+      - --attention-backend
+      - TRITON_ATTN
+      - --enforce-eager
+      - --gpu-memory-utilization
+      - "0.9"
+      - --max-model-len
+      - "16384"
+      - --max-num-seqs
+      - "64"
+      - --tokenizer-mode
+      - mistral
+      - --config-format
+      - mistral
+      - --load-format
+      - mistral
+      - --enable-prefix-caching
+      - --enable-auto-tool-choice
+      - --tool-call-parser
+      - mistral
+
+  # IBM family, 8B, weak. bf16 (only 8B — fast enough, no FP8 kernel risk).
+  granite-3.3:
+    image: vllm/vllm-openai:latest
+    profiles: ["granite-3.3"]
+    network_mode: host
+    ipc: host
+    volumes:
+      - /home/mikolajsemeniuk/.cache/huggingface:/root/.cache/huggingface
+      - vllm-cache:/root/.cache/vllm
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+      - VLLM_USE_MODELSCOPE=false
+      - MAX_JOBS=4
+      - SAFETENSORS_FAST_GPU=1
+    deploy:
+      resources:
+        reservations:
+          devices: [{driver: nvidia, count: all, capabilities: [gpu]}]
+    stop_grace_period: 60s
+    command:
+      - --model
+      - ibm-granite/granite-3.3-8b-instruct
+      - --served-model-name
+      - granite-3.3:8b
+      - --host
+      - 0.0.0.0
+      - --port
+      - "12000"
+      - --enforce-eager
+      - --gpu-memory-utilization
+      - "0.9"
+      - --max-model-len
+      - "16384"
+      - --max-num-seqs
+      - "64"
+      - --enable-prefix-caching
+      - --enable-chunked-prefill
+      - --enable-auto-tool-choice
+      - --tool-call-parser
+      - granite
+
+  # Meta family, 8B, weak. Calibrated FP8; Blackwell rules (TRITON_ATTN, bf16 KV).
+  llama-3.1:
+    image: vllm/vllm-openai:latest
+    profiles: ["llama-3.1"]
+    network_mode: host
+    ipc: host
+    volumes:
+      - /home/mikolajsemeniuk/.cache/huggingface:/root/.cache/huggingface
+      - vllm-cache:/root/.cache/vllm
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+      - VLLM_USE_MODELSCOPE=false
+      - MAX_JOBS=4
+      - SAFETENSORS_FAST_GPU=1
+      - VLLM_MARLIN_USE_ATOMIC_ADD=1
+    deploy:
+      resources:
+        reservations:
+          devices: [{driver: nvidia, count: all, capabilities: [gpu]}]
+    stop_grace_period: 60s
+    command:
+      - --model
+      - RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8
+      - --served-model-name
+      - llama-3.1:8b
+      - --host
+      - 0.0.0.0
+      - --port
+      - "12000"
+      - --attention-backend
+      - TRITON_ATTN
+      - --enforce-eager
+      - --gpu-memory-utilization
+      - "0.9"
+      - --max-model-len
+      - "16384"
+      - --max-num-seqs
+      - "64"
+      - --enable-prefix-caching
+      - --enable-auto-tool-choice
+      - --tool-call-parser
+      - llama3_json
+
+  # Qwen family, DENSE 14B, medium (bridges weak 7B → strong 30B MoE). Native
+  # FP8; Blackwell rules (TRITON_ATTN, bf16 KV, image `latest` for sm_121).
+  qwen3-14b:
+    image: vllm/vllm-openai:latest
+    profiles: ["qwen3-14b"]
+    network_mode: host
+    ipc: host
+    volumes:
+      - /home/mikolajsemeniuk/.cache/huggingface:/root/.cache/huggingface
+      - vllm-cache:/root/.cache/vllm
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+      - VLLM_USE_MODELSCOPE=false
+      - MAX_JOBS=4
+      - SAFETENSORS_FAST_GPU=1
+      - VLLM_MARLIN_USE_ATOMIC_ADD=1
+    deploy:
+      resources:
+        reservations:
+          devices: [{driver: nvidia, count: all, capabilities: [gpu]}]
+    stop_grace_period: 60s
+    command:
+      - --model
+      - Qwen/Qwen3-14B-FP8
+      - --served-model-name
+      - qwen3:14b
+      - --host
+      - 0.0.0.0
+      - --port
+      - "12000"
+      - --attention-backend
+      - TRITON_ATTN
+      - --enforce-eager
+      - --gpu-memory-utilization
+      - "0.9"
+      - --max-model-len
+      - "16384"
+      - --max-num-seqs
+      - "64"
+      - --enable-prefix-caching
+      - --enable-auto-tool-choice
+      - --tool-call-parser
+      - hermes
+
 volumes:
   vllm-cache:
