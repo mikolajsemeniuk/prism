@@ -65,7 +65,7 @@ func main() {
 	log.SetFlags(0)
 	scenarioDir := flag.String("scenario", "", "scenario folder (required)")
 	model := flag.String("model", "local", "model name (label + vLLM model id)")
-	endpoint := flag.String("endpoint", "http://localhost:8000/v1", "OpenAI-compatible endpoint")
+	endpoint := flag.String("endpoint", "http://localhost:12000/v1", "OpenAI-compatible endpoint")
 	label := flag.String("label", "baseline", "condition label for logging")
 	systemFile := flag.String("system-file", "", "file with the system prompt (fragment/placebo); empty = baseline")
 	grounding := flag.Bool("grounding", false, "inject an environment-context block (cwd + file listing)")

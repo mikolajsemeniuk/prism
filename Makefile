@@ -14,20 +14,23 @@ MODELS ?= bge-m3,nomic-embed-text
         vllm-up vllm-down vllm-logs smoke-runner pilot
 
 # --- experiment (roadmap step 5): scenario runner + vLLM ---------------------
-# Model/scenario/k are overridable: make pilot MODEL=local SCENARIO=... K=4
-MODEL    ?= local
+# One vLLM profile runs at a time on port 12000. PROFILE selects the model
+# service; MODEL is its --served-model-name (must match). Examples:
+#   make vllm-up PROFILE=qwen3  &&  make pilot MODEL=qwen3:30b-a3b
+PROFILE  ?= qwen3
+MODEL    ?= qwen3:30b-a3b
 SCENARIO ?= scenarios/selfrepair-01
 K        ?= 4
 
-# start/stop the tuned vLLM server (see docker-compose.yaml)
+# start/stop the selected vLLM profile (see docker-compose.yaml)
 vllm-up:
-	docker compose up -d
+	docker compose --profile $(PROFILE) up -d
 
 vllm-down:
-	docker compose down
+	docker compose --profile $(PROFILE) down
 
 vllm-logs:
-	docker compose logs -f vllm
+	docker compose logs -f
 
 # phase-0 smoke: replay a scripted "good" run — validates the harness (loop,
 # real tool execution, success + manipulation-check detection) with zero API.
