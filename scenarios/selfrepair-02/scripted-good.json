@@ -1,0 +1,8 @@
+[
+  {"tool": "ls", "args": {"path": "."}},
+  {"tool": "bash", "args": {"command": "python3 -m unittest 2>&1 | tail -3"}},
+  {"tool": "read_file", "args": {"path": "orders.py"}},
+  {"tool": "read_file", "args": {"path": "Makefile"}},
+  {"tool": "bash", "args": {"command": "make setup"}},
+  {"tool": "bash", "args": {"command": "python3 -m unittest 2>&1 | tail -3"}}
+]

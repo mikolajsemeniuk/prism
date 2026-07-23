@@ -11,6 +11,53 @@
 # To use your NVFP4 coding checkpoint instead, swap --model for its HF repo.
 
 services:
+  # weak tier — the "qwen loops" motivating case. Dense 7B, proven block from
+  # the kubelean box (starts fast, no MoE compile).
+  qwen2.5:
+    image: vllm/vllm-openai:v0.20.0-cu130
+    profiles: ["qwen2.5"]
+    network_mode: host
+    ipc: host
+    volumes:
+      - /home/mikolajsemeniuk/.cache/huggingface:/root/.cache/huggingface
+      - vllm-cache:/root/.cache/vllm
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+      - VLLM_USE_MODELSCOPE=false
+      - MAX_JOBS=4
+      - SAFETENSORS_FAST_GPU=1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    stop_grace_period: 60s
+    command:
+      - --model
+      - Qwen/Qwen2.5-7B-Instruct
+      - --served-model-name
+      - qwen2.5:7b-instruct
+      - --host
+      - 0.0.0.0
+      - --port
+      - "12000"
+      - --gpu-memory-utilization
+      - "0.90"
+      - --max-model-len
+      - "32768"
+      - --max-num-seqs
+      - "32"
+      - --compilation-config
+      - '{"cudagraph_mode": "none"}'
+      - --enable-prefix-caching
+      - --enable-chunked-prefill
+      - --enable-auto-tool-choice
+      - --tool-call-parser
+      - hermes
+
+  # medium tier — MoE, ~3B active.
   qwen3:
     image: vllm/vllm-openai:v0.20.0-cu130
     profiles: ["qwen3"]

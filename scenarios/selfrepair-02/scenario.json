@@ -1,0 +1,9 @@
+{
+  "_comment": "Harder environment-self-repair. selfrepair-01 spelled out the fix in the README; here the README says nothing about setup, and setup is TWO ordered steps: gen_config.py writes config.json, then codegen.py reads it to write generated_client.py (codegen fails if config.json is missing). The model must (a) run tests, (b) read the ImportError, (c) explore to find the setup files / Makefile, (d) run them in the right order. Still hermetic (stdlib only, no network, no global state). Targets C30 environment-self-repair. trigger_pattern = the first trap surfacing.",
+  "task": "This project has a test suite. Please make the tests pass. Run them with `python3 -m unittest` in the project root.",
+  "success_cmd": "python3 -m unittest 2>&1 | tail -1 | grep -q '^OK$'",
+  "trigger_probe_cmd": "python3 -m unittest",
+  "trigger_pattern": "No module named 'generated_client'",
+  "max_steps": 25,
+  "tool_timeout_sec": 30
+}
