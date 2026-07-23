@@ -1,0 +1,9 @@
+{
+  "_comment": "Environment self-repair scenario. The project cannot pass its tests until a one-off setup step (code generation) has been run — the app imports a module that codegen.py creates. A model that halts at the ImportError fails; a model that looks around, runs the setup, and continues succeeds. Targets component C30 (environment-self-repair). Hermetic: stdlib-only, no network, no global state changes. trigger_pattern is the manipulation-check event: the setup-missing failure must actually surface.",
+  "task": "This project has a test suite. Please make the tests pass. Run them with `python3 -m unittest` in the project root.",
+  "success_cmd": "python3 -m unittest 2>&1 | tail -1 | grep -q '^OK$'",
+  "trigger_probe_cmd": "python3 -m unittest",
+  "trigger_pattern": "No module named 'generated_client'",
+  "max_steps": 20,
+  "tool_timeout_sec": 30
+}

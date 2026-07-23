@@ -127,6 +127,46 @@ encodes this order: `make all` (= `make admit`) runs steps 1–5; `make clean`
 drops the cheap artefacts but keeps the embedding caches; `make clean-all`
 wipes `artefacts/` entirely.
 
+### Experiment harness (roadmap step 5 — pilot)
+
+`cmd/runner` runs one condition (system prompt + optional grounding) of one
+`scenarios/<name>/` against one model, k times, in a controlled-but-real
+environment: each episode gets a fresh temp copy of the scenario's `repo/`,
+the model drives a real agent loop (ls/read_file/write_file/bash tools that
+actually execute on the copy), and success is checked by really running the
+scenario's `success_cmd`. A scenario is DATA, not code — a new folder with
+`scenario.json` + `repo/` + `stimuli/`; changing scenarios never touches the
+runner. `scenario.json` fields: task, success_cmd, trigger_probe_cmd,
+trigger_pattern (the manipulation check — run on the initial repo, independent
+of the model's commands), max_steps. Per-episode metrics → `artefacts/
+episodes.jsonl`: success, steps, loop_repeats (identical tool calls repeated —
+the looping signal), triggered (did the planted trap surface).
+
+Anti-waste protocol: `make smoke-runner` replays a scripted good run (zero
+API) to validate the harness; `make pilot` runs baseline/grounding/fragment/
+placebo × K on one scenario+model for a fast direction+variance read; scale to
+more models/scenarios only after the pilot shows a signal. vLLM server (tuned
+for the GB10 box): `make vllm-up` (see docker-compose.yaml). First scenario:
+`selfrepair-01` (targets C30 environment-self-repair; tests pass only after a
+setup step the model must discover and run).
+
+## Communicating with the user
+
+The user is new to academic publishing. In every reply:
+
+- Write in simple Polish: short sentences, no unexplained jargon. The first
+  time any academic/statistical/ML term appears in a conversation, add a
+  one-line plain explanation and a tiny concrete example (e.g. "ARI — zgoda
+  dwóch sortowań z poprawką na przypadek: 1.0 = identyczne kupki, 0 = jak u
+  dwóch losowych sortowaczy").
+- For every proposal state three things: WHAT we do, HOW, and WHY — including
+  what breaks if we skip it ("bez placebo nie odróżnimy efektu treści od
+  efektu długości promptu").
+- Prefer concrete examples over abstractions: show the file, the table row,
+  the command, the folder layout — not just the concept.
+- Explain peer-review customs whenever they motivate a decision; never assume
+  the user knows how reviewers think.
+
 ## Findings to date (pilot 2026-07-22, replicated on the rebuilt pipeline 2026-07-23)
 
 1. **The controls exam bounds k from BOTH sides**: coarse cuts fail the

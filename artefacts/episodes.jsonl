@@ -1,0 +1,1 @@
+{"scenario":"selfrepair-01","model":"local","condition":"smoke-good","episode":1,"success":true,"steps":4,"loop_repeats":0,"triggered":true,"success_step":4,"tool_seq":["ls","read_file","bash","bash"]}

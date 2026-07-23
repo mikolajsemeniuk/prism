@@ -1,0 +1,6 @@
+* The history of cartography stretches back many thousands of years across many cultures. Early maps were drawn on clay tablets and cave walls.
+* A few notes about mapmaking traditions:
+  1. Ancient surveyors used ropes, pacing, and the positions of stars to estimate distances between distant landmarks and settlements.
+  2. Medieval maps often placed east at the top of the page, a convention that gives us the word "orientation" for aligning a map.
+  3. Only much later did standardized north-up projections and printed atlases become the common way to share geographic knowledge widely.
+* Similarly, the choice of projection always trades off some distortion of area, shape, distance, or direction against the others.

@@ -1,0 +1,7 @@
+[
+  {"tool": "ls", "args": {"path": "."}},
+  {"tool": "read_file", "args": {"path": "README.md"}},
+  {"tool": "bash", "args": {"command": "python3 -m unittest 2>&1 | tail -5"}},
+  {"tool": "bash", "args": {"command": "python3 codegen.py"}},
+  {"tool": "bash", "args": {"command": "python3 -m unittest 2>&1 | tail -3"}}
+]

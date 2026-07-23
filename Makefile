@@ -10,7 +10,41 @@
 
 MODELS ?= bge-m3,nomic-embed-text
 
-.PHONY: all build vet segment embed cluster kbounds admit taxonomy fragments gentex clean
+.PHONY: all build vet segment embed cluster kbounds admit taxonomy fragments gentex clean \
+        vllm-up vllm-down vllm-logs smoke-runner pilot
+
+# --- experiment (roadmap step 5): scenario runner + vLLM ---------------------
+# Model/scenario/k are overridable: make pilot MODEL=local SCENARIO=... K=4
+MODEL    ?= local
+SCENARIO ?= scenarios/selfrepair-01
+K        ?= 4
+
+# start/stop the tuned vLLM server (see docker-compose.yaml)
+vllm-up:
+	docker compose up -d
+
+vllm-down:
+	docker compose down
+
+vllm-logs:
+	docker compose logs -f vllm
+
+# phase-0 smoke: replay a scripted "good" run — validates the harness (loop,
+# real tool execution, success + manipulation-check detection) with zero API.
+smoke-runner:
+	go run ./cmd/runner -scenario $(SCENARIO) -scripted $(SCENARIO)/scripted-good.json -label smoke-good -k 1
+
+# pilot: the four core conditions of one scenario × one model × K episodes.
+# baseline (no prompt), grounding (env context), fragment (the C30 medoid),
+# placebo (length-matched neutral text). Reveals direction + variance fast.
+pilot:
+	go run ./cmd/runner -scenario $(SCENARIO) -model $(MODEL) -label baseline -k $(K)
+	go run ./cmd/runner -scenario $(SCENARIO) -model $(MODEL) -label grounding -grounding -k $(K)
+	go run ./cmd/runner -scenario $(SCENARIO) -model $(MODEL) -label fragment \
+		-system-file $(SCENARIO)/stimuli/fragment.txt -k $(K)
+	go run ./cmd/runner -scenario $(SCENARIO) -model $(MODEL) -label placebo \
+		-system-file $(SCENARIO)/stimuli/placebo.txt -k $(K)
+
 
 # step 1: corpus → artefacts/segments.jsonl
 segment:

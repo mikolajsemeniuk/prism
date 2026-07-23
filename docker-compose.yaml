@@ -1,0 +1,67 @@
+# vLLM inference server for the ablation experiment, tuned for the ASUS Ascent
+# GX10 (NVIDIA GB10 Grace-Blackwell: arm64 CPU + Blackwell GPU, 128 GB unified
+# memory, ~270 GB/s bandwidth). The runner talks to it at http://localhost:8000/v1.
+#
+#   docker compose up -d          # start the server
+#   MODEL=... docker compose up -d # override the model
+#   docker compose logs -f vllm   # watch load progress
+#
+# IMPORTANT (hardware note): GB10 is arm64 + Blackwell. The default x86 vLLM
+# image will NOT run here. Use an arm64 + CUDA-for-Blackwell build — NVIDIA's
+# NGC container is the reliable choice on this box:
+#   IMAGE=nvcr.io/nvidia/vllm:25.06-py3   (or the latest arm64/Blackwell tag)
+# Set it via the IMAGE env var below. Keep an eye on the tag matching your
+# installed driver.
+#
+# Tuning rationale (bandwidth-bound box → favour MoE + quantization + caching):
+#   --enable-prefix-caching  reuse the shared system-prompt prefix across the
+#                            hundreds of episodes that share a condition — the
+#                            single biggest speedup for THIS workload.
+#   --kv-cache-dtype fp8     halve KV-cache memory & bandwidth (Blackwell fp8).
+#   --quantization           run the model weights in NVFP4/FP8 (native to
+#                            Blackwell) — a 30B MoE then decodes like a small
+#                            dense model. Match this to your checkpoint.
+#   --max-num-seqs           continuous batching: run many episodes in parallel
+#                            for high aggregate throughput at small per-episode
+#                            latency.
+#   --max-model-len          bound the context to cap KV-cache growth; our
+#                            episodes are short, 16k is plenty.
+
+services:
+  vllm:
+    image: ${IMAGE:-vllm/vllm-openai:latest}
+    container_name: prism-vllm
+    ports:
+      - "8000:8000"
+    ipc: host                    # shared memory for the CUDA allocator
+    shm_size: "16gb"
+    volumes:
+      - ${HF_CACHE:-~/.cache/huggingface}:/root/.cache/huggingface
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+      - VLLM_ATTENTION_BACKEND=${VLLM_ATTENTION_BACKEND:-FLASHINFER}
+    command: >
+      --model ${MODEL:-Qwen/Qwen3-30B-A3B-Instruct-2507}
+      --served-model-name ${SERVED_NAME:-local}
+      --quantization ${QUANT:-modelopt_fp4}
+      --kv-cache-dtype ${KV_CACHE_DTYPE:-fp8}
+      --enable-prefix-caching
+      --gpu-memory-utilization ${GPU_MEM_UTIL:-0.90}
+      --max-model-len ${MAX_MODEL_LEN:-16384}
+      --max-num-seqs ${MAX_NUM_SEQS:-16}
+      --tensor-parallel-size 1
+      --enable-auto-tool-choice
+      --tool-call-parser ${TOOL_PARSER:-hermes}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "bash", "-lc", "curl -sf http://localhost:8000/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 40
