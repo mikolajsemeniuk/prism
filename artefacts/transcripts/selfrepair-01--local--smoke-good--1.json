@@ -18,7 +18,7 @@
     ]
   },
   {
-    "content": "README.md\ncodegen.py\norders.py\ntest_orders.py\n",
+    "content": "README.md\n__pycache__/\ncodegen.py\norders.py\ntest_orders.py\n",
     "role": "tool",
     "tool_call_id": "call_1"
   },
