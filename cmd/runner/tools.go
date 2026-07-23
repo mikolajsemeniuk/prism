@@ -20,6 +20,11 @@ func toolSchemas() []map[string]any {
 		return map[string]any{"type": "string", "description": desc}
 	}
 	fn := func(name, desc string, props map[string]any, required []string) map[string]any {
+		// Coerce nil → empty slice: strict tool-call parsers (Mistral,
+		// Llama, Granite) reject "required": null and require an array.
+		if required == nil {
+			required = []string{}
+		}
 		return map[string]any{
 			"type": "function",
 			"function": map[string]any{
