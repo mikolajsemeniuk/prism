@@ -41,14 +41,17 @@ services:
       - 0.0.0.0
       - --port
       - "12000"
+      # MoE (Qwen3MoeForCausalLM) triggers torch.compile + FlashInfer MoE
+      # autotune, which can hang for a long time on Blackwell/sm_121.
+      # enforce-eager skips both → fast, robust startup; runtime cost is
+      # negligible for our short agent-loop episodes.
+      - --enforce-eager
       - --gpu-memory-utilization
       - "0.90"
       - --max-model-len
       - "32768"
       - --max-num-seqs
       - "32"
-      - --compilation-config
-      - '{"cudagraph_mode": "none"}'
       - --enable-prefix-caching
       - --enable-chunked-prefill
       - --enable-auto-tool-choice
